@@ -1,0 +1,471 @@
+ /* 
+                     Breakpoint For 991px        <_____________!
+ */
+ 
+ @media only screen and (max-width:991px) {
+     /* preloader */
+     /* i frame */
+     /* chat box */
+     /* container */
+     .container {
+         padding: 0 45px;
+     }
+     /* header & hero mobile  */
+     .main {
+         display: block;
+     }
+     /* header  */
+     .header {
+         display: none;
+     }
+     /* hero */
+     .hero {
+         display: none;
+     }
+     /* leading in comerical */
+     .leading-in-comerical-second-row {
+         width: 90%;
+     }
+     .leading-incomerical-second-row-box {
+         width: 30%;
+     }
+     /* comerical cleaning */
+     .comerical-cleaning-row {
+         flex-direction: column;
+         padding: 50px 0;
+     }
+     .comerical-cleaning-colom-text {
+         padding-right: 0;
+     }
+     .comerical-cleaning-colom1 h3 br {
+         display: none;
+     }
+     .comerical-cleaning-colom2 {
+         margin-top: 50px;
+     }
+     /* benifit of comerical */
+     .benifit-comerical-col-2 {
+         padding: 0;
+     }
+     .benifit-comerical-col-1 {
+         display: none;
+     }
+     /* who service master  */
+     .who-servicemaster-row {
+         flex-wrap: wrap;
+     }
+     .who-servicemaster-box {
+         width: 33%;
+     }
+     /* certified */
+     .certified-row {
+         flex-direction: column;
+         padding-right: 0;
+     }
+     .certified-img {
+         width: 60%;
+     }
+     .certified-box2 {
+         padding-left: 0;
+         padding-top: 50px;
+     }
+     /* franchise */
+     .franchise-first-row {
+         flex-direction: column-reverse;
+         padding: 50px 0 0 100px;
+     }
+     .franchise-box2-img {
+         width: 60%;
+         float: right;
+     }
+     .franchise-box1 h3 br {
+         display: none;
+     }
+     .franchise-box1 p {
+         padding-bottom: 60px;
+     }
+     .franchise-box1 {
+         text-align: right;
+         padding-top: 50px;
+         padding-right: 0;
+     }
+     /* franchise another  */
+     .franchie-another-section-row {
+         padding: 0;
+         margin: 10px 0;
+         transform: translateY(0);
+     }
+     /* keep clean */
+     /* footer  */
+     /* main footer  */
+ }
+ /* 
+                     Breakpoint For 768px        <_____________!
+ */
+ 
+ @media only screen and (max-width:768px) {
+     /* preloader */
+     /* i frame */
+     /* chat box */
+     /* container */
+     .container {
+         padding: 0 15px;
+     }
+     /* header & hero mobile  */
+     .hero-box-mob h2 {
+         font-size: 35px;
+     }
+     .hero-box-mob p {
+         font-size: 21px;
+     }
+     .mobile-hero-sec-btn1 a,
+     .mobile-hero-sec-btn2 a {
+         padding: 1px 7px;
+         font-size: 18px;
+     }
+     /* header  */
+     /* hero */
+     /* leading in comerical */
+     /* first row  */
+     .leading-in-comerical-first-row {
+         flex-direction: column-reverse;
+         padding-top: 0;
+     }
+     .leading-in-comerical-first-row-colom {
+         width: 100%;
+     }
+     .leading-in-comerical-first-row-colom-img {
+         padding-right: 0;
+     }
+     .leading-in-comerical-first-row-colom2 {
+         padding-left: 0;
+     }
+     .leading-in-comerical-first-row-colom1 {
+         margin-top: 50px;
+     }
+     .leading-in-comerical-first-row-colom-img {
+         width: 85%;
+     }
+     /*  sec row  */
+     .leading-in-comerical-second-row-container {
+         padding: 0 15px;
+     }
+     .leading-in-comerical-second-row {
+         width: 100%;
+         margin: 16px 0;
+     }
+     /* comerical cleaning */
+     .comerical-cleaning-colom2 {
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+     /* benifit of comerical */
+     /* who service master  */
+     .who-servicemaster-box {
+         width: 50%;
+     }
+     /* certified */
+     .certified-img {
+         width: 100%;
+     }
+     /* franchise */
+     .franchise-box2-img {
+         width: 100%;
+     }
+     .franchise-box1 {
+         text-align: left;
+         padding-top: 50px;
+         padding-right: 0;
+     }
+     .franchise-first-row {
+         padding: 50px 0 0 0;
+     }
+     .franchise-box1 h3 {
+         padding: 20px 0;
+     }
+     .franchise-box1 p {
+         padding: 0 0 30px 0;
+     }
+     /* franchise another  */
+     .franchise-another-section-row-box h5 {
+         padding: 5px;
+     }
+     .franchie-another-section-row {
+         padding: 0;
+         margin: 10px 0 30px 0;
+         transform: translateY(0);
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+     /* keep clean */
+     .keep-row {
+         flex-direction: column;
+     }
+     .keep-box1 {
+         width: 100%;
+         height: max-content;
+     }
+     .keep-box1-txt {
+         width: 100%;
+     }
+     /* footer  */
+     .contact {
+         flex-direction: column;
+         align-items: center;
+     }
+     .contact-box2 {
+         padding-left: 0;
+     }
+     .contact-box2 p {
+         text-align: center;
+     }
+     .contact-box3 ul {
+         padding: 35px 30px;
+     }
+     /* main footer  */
+ }
+ /* 
+                     Breakpoint For 600px       <_____________!
+ */
+ 
+ @media only screen and (max-width:600px) {
+     /* preloader */
+     /* i frame */
+     /* chat box */
+     /* container */
+     /* header & hero mobile  */
+     .hero-mobile-ul li {
+         padding: 0 15px;
+     }
+     .hero-mobile-ul li i {
+         transform: translateX(0);
+     }
+     .hero-mobile-ul li:hover .fa-plus {
+         transform: translateX(-16px);
+     }
+     .logo-mobile {
+         width: 170px;
+         height: 62px;
+         margin: 7px 0;
+     }
+     .navigation-icon-anim-mob {
+         width: 29px;
+         height: 3px;
+     }
+     .navigation-icon-anim-mob::before,
+     .navigation-icon-anim-mob::after {
+         width: 29px;
+         height: 3px;
+     }
+     .call-icon-mobile i {
+         font-size: 26px;
+     }
+     .hero-content-mob {
+         margin-top: 0;
+         background: white;
+         padding-top: 30px;
+     }
+     .hero-section-btn {
+         flex-direction: column;
+     }
+     .mobile-hero-sec-btn2 {
+         margin-left: 0;
+     }
+     .mobile-hero-sec-btn1 a,
+     .mobile-hero-sec-btn2 a {
+         padding: 5px 100px;
+         font-size: 21px;
+     }
+     /* header  */
+     /* hero */
+     /* leading in comerical */
+     .leading-in-comerical-second-row {
+         flex-direction: column;
+         width: max-content;
+     }
+     .leading-incomerical-second-row-box {
+         width: 100%;
+         justify-content: flex-start;
+     }
+     .leading-incomerical-second-row-box:not(:last-child)::after {
+         width: 80%;
+         height: 2px;
+         left: 15px;
+         bottom: 0;
+         top: auto;
+     }
+     .leading-incomerical-second-row-box p br {
+         display: none;
+     }
+     .leading-incomerical-second-row-box p {
+         text-align: left;
+     }
+     /* comerical cleaning */
+     .comerical-cleaning-colom2 {
+         grid-template-columns: 1fr 1fr;
+     }
+     /* benifit of comerical */
+     /* who service master  */
+     /* certified */
+     /* franchise */
+     /* franchise another  */
+     .franchie-another-section-row {
+         grid-template-columns: 1fr 1fr;
+     }
+     /* keep clean */
+     /* footer  */
+     /* main footer  */
+     main-footer .main-footer-section {
+         padding: 10px 0;
+         text-align: center;
+     }
+     main-footer .main-footer-section main {
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+ }
+ /* 
+                     Breakpoint For 511px        <_____________!
+ */
+ 
+ @media only screen and (max-width:511px) {
+     /* preloader */
+     /* i frame */
+     /* chat box */
+     #chat-box-icon {
+         right: 5px !important;
+     }
+     .chat-div {
+         right: 5px !important;
+     }
+     /* container */
+     /* header & hero mobile  */
+     .logo-mobile {
+         width: 170px !important;
+         height: 62px !important;
+     }
+     .logo-mobile img {
+         width: 100%;
+         height: 100%;
+     }
+     .hero-mobile {
+         background-image: url(../images/content6.webp);
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 500px;
+     }
+     .logo-mobile {
+         width: 130px;
+         height: 50px;
+         margin: 7px 0;
+     }
+     /* header  */
+     /* hero */
+     /* leading in comerical */
+     /* comerical cleaning */
+     /* benifit of comerical */
+     /* who service master  */
+     .who-servicemaster-box {
+         width: 100%;
+     }
+     /* certified */
+     /* franchise */
+     /* franchise another  */
+     .franchie-another-section-row {
+         grid-template-columns: 1fr;
+     }
+     /* keep clean */
+     /* footer  */
+     .contact-box3 {
+         flex-direction: column;
+         padding-left: 0;
+     }
+     .contact-box3 ul {
+         padding: 10px 0;
+     }
+     /* main footer  */
+ }
+ /* 
+                     Breakpoint For 415px        <_____________!
+ */
+ 
+ @media only screen and (max-width:415px) {
+     /* preloader */
+     /* i frame */
+     /* chat box */
+     /* container */
+     /* header & hero mobile  */
+     .navigation-icon-mobile {
+         margin-left: 10px;
+     }
+     .call-icon-mobile {
+         margin-right: 10px;
+     }
+     .navigation-icon-mobile i {
+         font-size: 24px;
+     }
+     .call-icon-mobile i {
+         font-size: 23px;
+     }
+     .mobile-hero-sec-btn1 a,
+     .mobile-hero-sec-btn2 a {
+         padding: 5px 50px;
+         font-size: 21px;
+     }
+     .hero-box-mob h2 {
+         font-size: 29px !important;
+         word-spacing: 0px;
+     }
+     .hero-box-mob p {
+         font-size: 16px;
+     }
+     .mobile-hero-sec-btn1,
+     .mobile-hero-sec-btn2 {
+         background: transparent !important;
+     }
+     .mobile-hero-sec-btn1 a {
+         font-size: 16px;
+     }
+     .mobile-hero-sec-btn2 a {
+         font-size: 16px;
+     }
+     /* header  */
+     /* hero */
+     /* leading in comerical */
+     .leading-in-comerical-first-row-text h3 {
+         margin-top: 0;
+     }
+     /* comerical cleaning */
+     .comerical-cleaning-colom2 {
+         grid-template-columns: 1fr;
+     }
+     .comerical-cleaning-btn {
+         width: 100%;
+         height: 50px;
+         text-align: center;
+     }
+     .comerical-cleaning-btn a br {
+         display: none;
+     }
+     .comerical-cleaning-btn i {
+         margin: 0;
+     }
+     /* benifit of comerical */
+     /* who service master  */
+     /* certified */
+     .certified-box2-images {
+         flex-direction: column;
+     }
+     .certified-box2-images img {
+         width: 150px;
+     }
+     /* franchise */
+     /* franchise another  */
+     /* keep clean */
+     .keep-box2 {
+         grid-template-columns: 1fr;
+         grid-template-rows: 250px 250px 250px;
+         grid-gap: 7px;
+     }
+     /* footer  */
+     /* main footer  */
+ }

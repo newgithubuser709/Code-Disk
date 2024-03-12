@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Company | Website Design</title>
+    <!-- google font  >>>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- google font  >>>-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- google font  >>>-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <!-- font awesome cdn  >>>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Aos library animate on scroll cdn  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive css style  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--   ............................
+                 go to top btn start    ......   -->
+
+    <div onclick="topFunction()" id="myBtn" title="Go to top">
+        <a href="#">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </div>
+
+    <!--   ............................
+                 header start    ......   -->
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo..." data-aos="fade-right">
+                </a>
+            </div>
+            <header>
+                <nav class="nav">
+                    <ul class="nav-ul" data-aos="fade-left">
+                        <li><a href="#" onclick="menutoggleclose()">home</a></li>
+                        <li><a href="#service" onclick="menutoggleclose()">service</a></li>
+                        <li><a href="#about" onclick="menutoggleclose()">about</a></li>
+                        <li><a href="#team" onclick="menutoggleclose()">team</a></li>
+                        <li><a href="#pricing" onclick="menutoggleclose()">pricing</a></li>
+                        <li><a href="#port-folio" onclick="menutoggleclose()">portfolio</a></li>
+                        <li><a href="#contact" onclick="menutoggleclose()">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="navigate-icon" data-aos="fade-left">
+                <i class="fa-solid fa-bars burger" onclick="menutoggle()"></i>
+                <i class="fa-solid fa-xmark cross" onclick="menutoggle2()"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--   ............................
+                 Hero section start    ....   -->
+
+    <div class="hero" id="hero">
+        <div class="overlay">
+            <div class="container">
+                <div class="hero-content" data-aos="zoom-out">
+                    <h1>
+                        solution company <br> <span>we design & code websites</span>
+                    </h1>
+                    <div class="hero-btn">
+                        <a href="#"> our work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--   ............................
+                 services section start    ....   -->
+    <div id="service">
+        <div class="container">
+            <div class="service-row" data-aos="fade-up">
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            fully responsive
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet <a href="#">examples</a>, adipisicing.
+                            <br> In veritatis, ullam, <a href="#">rum</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            customize easily
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet <a href="#">consectetur,</a> adipisicing.
+                            <br> In veritatis, ullam, rum
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            SEO friendly
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit <a href="#">amet</a> consectetur, adipisicing.
+                            <br> In veritatis, ullam, rum
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            html5 websites
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing.
+                            <br><a href="#"> In</a> veritatis, ullam, rum
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            quick support
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet examples , adipisicing.
+                            <br> In veritatis, ullam, rum
+                        </p>
+                    </div>
+                </div>
+                <div class="service-box">
+                    <div class="service-box-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="service-box-txt">
+                        <h3>
+                            up to date
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing.
+                            <br> In veritatis, ullam, <a href="#">rum</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- provide solition section  -->
+
+    <div class="provide-solution" id="about">
+        <div class="overlay">
+            <div class="container" style="overflow: hidden;">
+                <div class="pro-sol-content" data-aos="fade-left">
+                    <div class="provide-solution-row">
+                        <h1>
+                            We provide <span>solutions </span>
+                        </h1>
+                        <h2>
+                            <span>creative </span> designers &<br> <span> telented </span>developers
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit molestiae temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit molestiae temporibus suscipit reiciendis dignissimos! Sunt autem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About  solition section  -->
+
+    <div class="about-solution">
+        <div class="container">
+            <div class="about-sol-content" style="overflow: hidden;">
+                <div class="about-sol-box about-box-1" data-aos="fade-right">
+                    <h1>
+                        about solution
+                    </h1>
+                    <h3>
+                        smart, light and adaptive
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur Tempore nulla adipisicing
+                        <br> aut cumque! Eum officia laborum sunt quibusdam voluptatum.
+                        <br> A vero similique commodi.
+                    </p>
+                    <p>
+                        Ad, veniam earum. Dolorum necessitatibus expedita, esse cupiditate
+                        <br> iste tempore asperiores facilis minima deserunt aperiam distinctio harum
+                        <br> porro voluptate sapiente placeat reprehenderit!
+                    </p>
+                </div>
+
+                <div class="about-sol-box about-box-2" data-aos="fade-left">
+                    <div class="about-box-2-row">
+                        <h4> web design
+                            <span>100%</span>
+                        </h4>
+                        <div class="progress-bar progress-bar1"></div>
+                    </div>
+                    <div class="about-box-2-row">
+                        <h4> Multimedia
+                            <span>80%</span>
+                        </h4>
+                        <div class="progress-bar progress-bar2"></div>
+                    </div>
+                    <div class="about-box-2-row">
+                        <h4> search engine<br> marketing
+                            <span>90%</span>
+                        </h4>
+                        <div class="progress-bar progress-bar3"></div>
+                    </div>
+                    <div class="about-box-2-row">
+                        <h4> custom<br> branding
+                            <span>70%</span>
+                        </h4>
+                        <div class="progress-bar progress-bar4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- meet the team  -->
+
+    <div class="meet-the-team" id="team">
+        <div class="div-h1" data-aos="fade-left">
+            <h1>
+                meet the team
+            </h1>
+        </div>
+        <div class="container" style="overflow: hidden;">
+            <div class="meet-row" data-aos="fade-right">
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        director
+                    </h4>
+                    <h3>
+                        julia
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        developer
+                    </h4>
+                    <h3>
+                        marry
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        manager
+                    </h4>
+                    <h3>
+                        linda
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                        <a href=""> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        director
+                    </h4>
+                    <h3>
+                        julia
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        developer
+                    </h4>
+                    <h3>
+                        marry
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="meet-box">
+                    <img src="images/team1.jpg" alt="">
+                    <h4>
+                        manager
+                    </h4>
+                    <h3>
+                        linda
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing Totam itaque aliquam remeng.
+                    </p>
+                    <div class="meet-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- news letter  -->
+
+    <div class="news-letter">
+        <div class="overlay">
+            <div class="container" style="overflow: hidden;">
+                <div class="news-content" data-aos="fade-left">
+                    <h2>
+                        Get our newsletter!
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur sit amet dolor adipisicing elit.
+                    </p>
+                    <div class="news-form">
+                        <form>
+                            <input type="email" placeholder="Enter your email" class="news-emal">
+                            <button type="submit">sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our pricing  -->
+
+    <div class="our-pricing" id="pricing">
+        <div class="container">
+            <div class="pricing-content">
+                <h1 data-aos="zoom-in">
+                    our pricing
+                </h1>
+                <div class="pricing-row">
+                    <div class="pricing-box" data-aos="fade-up">
+                        <h1>
+                            basic
+                        </h1>
+                        <ul>
+                            <li>$20 per month</li>
+                            <li>100 gb storage</li>
+                            <li>1000gb transfer</li>
+                            <li>10 bootstrap themes</li>
+                            <li>24hour support</li>
+                        </ul>
+                        <button>sign up</button>
+                    </div>
+                    <div class="pricing-box" data-aos="fade-down">
+                        <h1>
+                            standard
+                        </h1>
+                        <ul>
+                            <li>$20 per month</li>
+                            <li>100 gb storage</li>
+                            <li>1000gb transfer</li>
+                            <li>10 bootstrap themes</li>
+                            <li>24hour support</li>
+                        </ul>
+                        <button>sign up</button>
+                    </div>
+                    <div class="pricing-box" data-aos="fade-up">
+                        <h1>
+                            professional
+                        </h1>
+                        <ul>
+                            <li>$20 per month</li>
+                            <li>100 gb storage</li>
+                            <li>1000gb transfer</li>
+                            <li>10 bootstrap themes</li>
+                            <li>24hour support</li>
+                        </ul>
+                        <button>sign up</button>
+                    </div>
+                    <div class="pricing-box" data-aos="fade-down">
+                        <h1>
+                            advanced
+                        </h1>
+                        <ul>
+                            <li>$20 per month</li>
+                            <li>100 gb storage</li>
+                            <li>1000gb transfer</li>
+                            <li>10 bootstrap themes</li>
+                            <li>24hour support</li>
+                        </ul>
+                        <button>sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- recent jobs  -->
+
+    <div class="recent-job" id="port-folio">
+        <div class="container" style="overflow: hidden;">
+            <h1 data-aos="fade-left">recent projects</h1>
+
+
+            <div class="job-ancors" data-aos="zoom-in">
+                <a href="#">all</a>
+                <a href="#">graphic</a>
+                <a href="#">photoshop</a>
+                <a href="#">wallpaper</a>
+            </div>
+            <!-- jobs row  -->
+            <div class="jobs-row" data-aos="fade-right">
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+                <div class="jobs-box"><img src="images/team1.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact  -->
+
+    <div class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="for-responsive-flex">
+                        <div class="contact-col" data-aos="fade-up">
+                            <h1>
+                                solution co.
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor amet, consectetur adipisicing elit. amet,Lorem ipsum dolor consectetur adipisicing elit amet, consectetur adipisicing elit.
+                            </p>
+                            <div class="col-icon-1">
+                                <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-col contact-col-sec" data-aos="fade-down">
+                            <h2>
+                                visit office
+                            </h2>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/place/New+York+Diner/@12.9259023,100.8530425,15z/data=!3m1!4b1!4m6!3m5!1s0x310297e1498fbf9b:0xd682ffa2d1c16d15!8m2!3d12.925882!4d100.8714966!16s%2Fg%2F11sfdbf0zc">Link Muslim Street, Lahore pk</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i><a href="tel:+1234567890">+923414077978</a>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-envelope"></i><a href="mailto:demo@gmail.com">haseebarshad821@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-col-third" data-aos="fade-up">
+                        <form>
+                            <div class="third-form1">
+                                <input type="text" placeholder="Name" class="con-input-txt">
+                                <input type="email" placeholder="Email" class="con-input-email">
+                            </div>
+                            <div class="third-form2">
+                                <textarea placeholder="Message" class="con-txt"></textarea>
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    copyright @ 2016 solution company<br>designed by <a href="tel:+923414077978">tx_haseeb_@</a>
+                </div>
+                <div class="footer-icons">
+                    <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"> <i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"> <i class="fa-brands fa-google"></i></a>
+                    <a href="#"> <i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INITIALIZE AOS library animate on scroll   -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 300, // offset (in px) from the original trigger point
+            delay: 300, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <!-- .......................... 
+               js   linked 
+            ..................  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

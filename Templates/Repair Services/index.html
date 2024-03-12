@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web title  -->
+    <title>Repair Services | Demo Template / Design</title>
+    <!-- fav icon  -->
+    <link rel="shortcut icon" href="fav/fav.png" type="image/x-icon">
+    <!-- google font   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive  -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- root  -->
+    <link rel="stylesheet" href="css/root.css">
+</head>
+<!--  overflow will remove after load document -->
+
+<body onload="PreLoader()" style="overflow: hidden;" id="body">
+
+    <!--  ___________ Pre Loader ___________________________________________  -->
+
+    <div id="preloader">
+        <div class="container">
+            <div class="preloader-content">
+                <img src="images/logo.png" class="preloader-img" alt="">
+                <div class="text">
+                    <p>
+                        loading...
+                    </p>
+                    <img src="images/gify.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--_________________ Header Section _____________________________________________________  -->
+    <header>
+        <!--_________________ Header 1 _____________________________________________________  -->
+        <div class="header-one">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+                <a href="#">
+                    REPAIR SERVICES
+                 </a>
+            </div>
+            <div class="header-open_close-detail-div">
+                <h6>
+                    MON - SAT:7.00 - 18.00 <br> SUNDAY: CLOSED
+                </h6>
+                <div class="header-open_close-detail-div-num">
+                    <a href="tel:+0123456789">+012-345-67890</a>
+                </div>
+            </div>
+            <div class="header-one-btn_call-now btn-root">
+                <a href="tel:+923414077978">call now</a>
+            </div>
+            <!-- for responsive btn burger/cross  -->
+            <div class="toggle" onclick="menuToggle()">
+                <div id="menuline1"></div>
+                <div id="menuline2"></div>
+                <div id="menuline3"></div>
+            </div>
+        </div>
+        <!--_________________ Header 2 _____________________________________________________  -->
+        <div class="header-two" id="header2">
+            <nav>
+                <ul>
+                    <li><a onclick="hideMobieNav()" href="#">home</a></li>
+                    <li class="services" id="services" onclick="serviceitems()">services<i class="fa-solid fa-chevron-down" id="downArow"></i>
+                        <div class="services-items">
+                            <ul>
+                                <li><a onclick="hideMobieNav()" href="#portfolio-scroll">portfolio<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a onclick="hideMobieNav()" href="#touch-with-us-scroll">touch with us<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a onclick="hideMobieNav()" href="#comunity-scroll">comunity<i class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li id="ServiceItemMob" class="services-items-mob">
+                        <ul>
+                            <li><a onclick="hideMobieNav()" href="#comunity-scroll">comunity<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a onclick="hideMobieNav()" href="#portfolio-scroll">portfolio<i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a onclick="hideMobieNav()" href="#touch-with-us-scroll">touch with us<i class="fa-solid fa-chevron-right"></i></a> </li>
+                        </ul>
+                    </li>
+                    <li><a onclick="hideMobieNav()" href="#about-us-scroll">about us</a></li>
+                    <li><a onclick="hideMobieNav()" href="#faq-scroll">faq</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--  just a wrapper dont take this tag serious
+        -->
+    <div class="click_outSide_to_close_nav">
+
+        <!--_________________ Hero Section _____________________________________________________  -->
+
+        <div class="hero">
+            <div class="overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>
+                            Repair <br> Services
+                        </h1>
+                        <p>
+                            Our team can help with management wind-downs, as we have experience in dealing with the issues <br> that follow. We are one of the best companies in the restructuring industry.
+                        </p>
+                        <div class="hero-row">
+                            <div class="hero-btn-1 btn-root">
+                                <a href="#">get started</a>
+                            </div>
+                            <div class="hero-btn-2 btn-root">
+                                <a href="#">more info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--_________________ Work Section _____________________________________________________  -->
+
+        <section id="portfolio-scroll">
+            <div class="work-section">
+                <div class="container">
+                    <div class="work-section-content">
+                        <div class="work-section-row">
+                            <div class="work-section-box">
+                                <h6>
+                                    Day of work
+                                </h6>
+                                <h5><i class="fa-solid fa-dollar-sign"></i>100<span> / Per day</span></h5>
+                                <p class="para">
+                                    Find a strategy for your next operations. Our aim is to fine-tune your processes from the perspective you don't keep in mind.
+                                </p>
+                                <div class="work-section-btn  btn-purple-transparent btn-root">
+                                    <a href="#">get started</a>
+                                </div>
+                            </div>
+                            <div class="work-section-box">
+                                <h6>
+                                    Week of work
+                                </h6>
+                                <h5><i class="fa-solid fa-dollar-sign"></i>300<span> / Per day</span></h5>
+                                <p class="para">
+                                    Examine the new ways to develop new creative approaches. Get new opportunities. Use your chances.
+                                </p>
+                                <div class="work-section-btn  btn-purple-transparent btn-root">
+                                    <a href="#">get started</a>
+                                </div>
+                            </div>
+                            <div class="work-section-box">
+                                <h6>
+                                    Month of work
+                                </h6>
+                                <h5><i class="fa-solid fa-dollar-sign"></i>1000<span> / Per day</span></h5>
+                                <p class="para">
+                                    We believe that it is the only way to make a stable enhancement: we say so because we have a certain experience.
+                                </p>
+                                <div class="work-section-btn  btn-purple-transparent btn-root">
+                                    <a href="#">get started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--_________________ Our Advantages _____________________________________________________  -->
+
+
+        <div class="our-advantages">
+            <div class="fill-overlay">
+                <div class="container">
+                    <div class="our-advantages-content">
+                        <h1>
+                            our <br> advantages
+                        </h1>
+                        <div class="our-advantages-row">
+                            <div class="our-advantages-row-box">
+                                <div class="our-advantages-row-box-img">
+                                    <img src="images/img1.png" alt="">
+                                </div>
+                                <div class="our-advantages-row-box-text">
+                                    <h4>
+                                        Best Masters
+                                    </h4>
+                                    <p class="para">
+                                        We eternally accept sufficient means to make our business manner quicker and reliable and provide you a loyal result.
+                                    </p>
+                                    <div class="our-advantages-btn btn-root  btn-purple-transparent">
+                                        <a href="#">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-advantages-row-box">
+                                <div class="our-advantages-row-box-img">
+                                    <img src="images/img2.jpg" alt="">
+                                </div>
+                                <div class="our-advantages-row-box-text">
+                                    <h4>
+                                        Modern Tool
+                                    </h4>
+                                    <p class="para">
+                                        Our crew can assist with administration wind-downs, as we possess wisdom in dealing with the problems that arise. </p>
+                                    <div class="our-advantages-btn btn-root  btn-purple-transparent">
+                                        <a href="#">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="our-advantages-row-box">
+                                <div class="our-advantages-row-box-img">
+                                    <img src="images/img3.png" alt="">
+                                </div>
+                                <div class="our-advantages-row-box-text">
+                                    <h4>
+                                        Your Design
+                                    </h4>
+                                    <p class="para">
+                                        Find a tact for your following orders. Our purpose is to advise your manners from the view you don't have. </p>
+                                    <div class="our-advantages-btn btn-root  btn-purple-transparent">
+                                        <a href="#">read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--_________________ Team Section _____________________________________________________  -->
+
+        <div class="team" id="comunity-scroll">
+            <div class="container">
+                <div class="team-content">
+                    <h1 class="heading">
+                        team
+                    </h1>
+                    <div class="team-row">
+                        <div class="team-box">
+                            <div class="team-box-text">
+                                <h3>
+                                    Jena Smith
+                                </h3>
+                                <h6>
+                                    Labor Safety
+                                </h6>
+                                <p class="para">
+                                    Everything was made in time, I liked the work, but it's never enough, so 4 stars, don't relax, keep working.
+                                </p>
+                                <div class="team-box-star-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="team-box-img">
+                                <img src="images/img4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-box-text">
+                                <h3>
+                                    James Oldman
+                                </h3>
+                                <h6>
+                                    Craftsman
+                                </h6>
+                                <p class="para">
+                                    Everything was made in time, I liked the work, but it's never enough, so 4 stars, don't relax, keep working. </p>
+                                <div class="team-box-star-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="team-box-img">
+                                <img src="images/img5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-box-text">
+                                <h3>
+                                    Oliver Stone
+                                </h3>
+                                <h6>
+                                    Handyman
+                                </h6>
+                                <p class="para">
+                                    I hired the team to solve my problem, and it is solved now. The manager is great. I had to wait, so two stars are gone. </p>
+                                <div class="team-box-star-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="team-box-img">
+                                <img src="images/img6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-box-text">
+                                <h3>
+                                    Henry James
+                                </h3>
+                                <h6>
+                                    Master
+                                </h6>
+                                <p class="para">
+                                    JUST AS I WANTED!!! Everything is alright! Hire them, they are the best team I worked with!!!! Highly recommended. </p>
+                                <div class="team-box-star-row">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="team-box-img">
+                                <img src="images/img7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _________________ Team info Section _____________________________________________________  -->
+
+        <div class="team-info" id="about-us-scroll">
+            <div class="overlay">
+                <div class="container">
+                    <div class="team-info-row">
+                        <div class="team-info-box">
+                            <div class="team-info-box-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <h4>
+                                Repair Services
+                            </h4>
+                            <p class="para">
+                                Our values are trust, respect, competence, and curiosity. Our workers are well trained and have a ton of experience. There is nothing that can't be fixed in our relationships with a respectful communication.
+                            </p>
+                            <div class="team-info-btn btn-root">
+                                <a href="#" id="faq-scroll"> more info</a>
+                            </div>
+                        </div>
+                        <div class="team-info-box">
+                            <h4>
+                                Best Masters
+                            </h4>
+                            <h6>
+                                Well-trained, well-educated, professional skills, personal skills, a great experience. erat.
+                            </h6>
+                            <h4>
+                                Satisfied Customers
+                            </h4>
+                            <h6>
+                                Our techniques are always up to date, we are constantly developing to provide the easiest way to satisfy your needs.
+                            </h6>
+                            <h4>
+                                More Profitable
+                            </h4>
+                            <h6>
+                                You can access our work process at each stage to add your changes and communicate with our designers if you in doubt, we are here to help.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _________________ Why WE work Section Section _____________________________________________________  -->
+
+        <div class="why-we-work">
+            <div class="container">
+                <div class="why-we-work-row">
+                    <div class="why-we-work-row-box">
+                        <h1>
+                            Why we work <br> best?
+                        </h1>
+                    </div>
+                    <div class="why-we-work-row-box">
+                        <p class="why-we-work-box-para">
+                            New Handyman AMP HTML Template. Download Now. In times when everything changes quickly, you can have a benefit by supporting what you already have with external resources and experience. Make a special plan for improvements. Financial and economic advisory
+                            services. We are dealing with complex troubles.
+                        </p>
+                    </div>
+                    <div class="why-we-work-row-box">
+                        <p class="why-we-work-box-para">
+                            Find a strategy for your next operations. Our aim is to fine-tune your processes from the perspective you don't keep in mind. Examine the new ways to develop new creative approaches. Get new opportunities. Use your chances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ___________ Why WE work button Section Section ______________________________________  -->
+
+        <div class="why-we-work-button-section" id="touch-with-us-scroll">
+            <div class="container">
+                <div class="why-we-work-btn-row">
+                    <div class="why-we-work-button-section_btn btn-yellow-fill-color-white btn-root">
+                        <a href="#">get started</a>
+                    </div>
+                    <div class="why-we-work-button-section_btn btn-root">
+                        <a href="#">more info</a>
+                    </div>
+                    <div class="why-we-work-button-section_btn btn-purple-fill btn-root">
+                        <a href="#">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- _________________ Footer Section _____________________________________________________  -->
+
+        <footer>
+
+            <!-- _________________ Contact Section _____________________________________________________  -->
+            <div class="contact">
+                <div class="container">
+                    <div class="contact-row">
+                        <div class="contact-box">
+                            <form>
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <textarea placeholder="Message"></textarea>
+                                <div class="  btn-yellow-fill btn-root">
+                                    <a href="#">send ></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact-box">
+                            <h3>
+                                Contacts
+                            </h3>
+                            <div class="contact-box-mail-div">
+                                <h5>
+                                    Email: haseebarshad821@gmail.com
+                                </h5>
+                                <h5>
+                                    Phone: +923414077978
+                                </h5>
+                                <h5>
+                                    Fax: +923414077978
+                                </h5>
+                            </div>
+                            <div class="contact-box-mail-div2">
+                                <h3>
+                                    Address
+                                </h3>
+                                <h5>
+                                    link muslim street <br> City, Lahore Pakistan
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="contact-box">
+                            <h3>
+                                Categories
+                            </h3>
+                            <ul>
+                                <li>Projects</li>
+                                <li>Design</li>
+                                <li>Team</li>
+                                <li>Help</li>
+                                <li>Tech Support</li>
+                            </ul>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-box-img">
+                                <a href="#"><img src="images/logo.png" alt=""></a>
+                                <p class="para">
+                                    Handyman Tx haseeb @ HTML Templates
+                                </p>
+                                <div class="street-adress-div">
+                                    <div class="street-adress-div-icon">
+                                        <i class="fa-solid fa-mobile-button"></i>
+                                    </div>
+                                    <h5>(+923) 414 077978</h5>
+                                </div>
+                                <div class="street-adress-div">
+                                    <div class="street-adress-div-icon">
+                                        <i class="fa-solid fa-location-arrow"></i>
+                                    </div>
+                                    <h5>Samanabad Lahore</h5>
+                                </div>
+                                <div class="street-adress-div">
+                                    <div class="street-adress-div-icon">
+                                        <i class="fa-regular fa-envelope-open"></i>
+                                    </div>
+                                    <h5>haseebarshad821@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ___________ CopyRight Section __________________________________________  -->
+
+            <copyright-section>
+                <div class="copy-right">
+                    <div class="container">
+                        <p>
+                            <span class="copyright-span">Copyright</span><i class="fa-regular fa-copyright fa-bounce"></i><span class="year-span">2o23</span><span class="developer-span"><a href="tel:+923414077978">Tx _haseeb_@</a></span>
+                        </p>
+                    </div>
+                </div>
+            </copyright-section>
+
+            <!-- footer end >>> -->
+        </footer>
+
+        <!--  just a wrapper closing tag dont take this tag serious
+        -->
+    </div>
+
+    <!--  website javascript   -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

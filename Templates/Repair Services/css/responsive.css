@@ -1,0 +1,600 @@
+/* ____         responsive media queries for devices break_points
+   __________________________________________________________________________________s                                                                     
+*/
+
+
+/* 
+      Media Screen For  _____  991px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:991px) {
+    /*    Heading  */
+    /*    container    */
+    /*    header section    */
+    .toggle {
+        display: grid;
+        align-items: center;
+    }
+    .logo a:nth-child(2) {
+        display: none;
+    }
+    .header-one-btn_call-now {
+        display: none;
+    }
+    .header-open_close-detail-div {
+        transform: translateX(0);
+        flex: 1;
+        justify-content: space-around;
+    }
+    .header-two {
+        width: 0px;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        margin-left: 1000px;
+        transition: ease 0.9s;
+        z-index: 999999999999999999;
+    }
+    .header2-anim {
+        width: 200px !important;
+        margin-left: 0;
+    }
+    .header-two nav ul {
+        width: 200px !important;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        padding-top: 70px;
+    }
+    .header-two nav ul li a {
+        margin: 9px 0;
+    }
+    .services-items {
+        display: none;
+    }
+    .services-items-mob {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+        margin-top: 9px;
+    }
+    #downArow {
+        transition: 0.7s;
+        margin-left: 5px;
+    }
+    .downArow-anim {
+        transform: rotate( -180deg);
+        margin-left: 10px !important;
+    }
+    /*    hero section    */
+    /*    work section   */
+    .work-section-box {
+        padding: 30px 15px;
+    }
+    .work-section-box h6 {
+        font-size: 30px;
+    }
+    .work-section-box h5 {
+        font-size: 35px;
+    }
+    /*    our advantages section   */
+    /*    our team section    */
+    .team-box {
+        flex-direction: column-reverse;
+    }
+    .team-box-text,
+    .team-box-img {
+        width: 100%;
+    }
+    /*    team info section   */
+    .team-info-box {
+        padding: 30px 16px;
+    }
+    /*    why we work section   */
+    .why-we-work-row {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .why-we-work-row-box:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-content: center;
+    }
+    .why-we-work-row-box:first-child h1 br {
+        display: none;
+    }
+    /*    why we work  button  section   */
+    /*    footer section   */
+    .contact-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-box {
+        margin: 18px 0;
+    }
+    .contact-box:last-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-content: center;
+        display: grid;
+        text-align: center;
+    }
+    /*   Copy Right in footer  section   */
+}
+
+
+/* 
+      Media Screen For  _____  800px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:800px) {
+    /*    Heading  */
+    .heading {
+        font-size: 52px !important;
+    }
+    /*    container    */
+    /*    header section    */
+    .header-open_close-detail-div a {
+        display: none;
+    }
+    /*    hero section    */
+    .hero-content {
+        padding: 120px 0 90px 0;
+    }
+    .hero-content h1 {
+        font-size: 59px;
+        padding-bottom: 10px;
+        margin-top: 70px;
+        font-weight: 700;
+        font-family: 'Charmonman', cursive;
+    }
+    .hero p br {
+        display: none;
+    }
+    /*    work section   */
+    /*    our advantages section   */
+    .our-advantages-row {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    /*    our team section    */
+    /*    team info section   */
+    /*    why we work section   */
+    /*    why we work  button  section   */
+    /*    footer section   */
+    .contact-box:nth-child(3) {
+        padding-left: 50px;
+    }
+    /*   Copy Right in footer  section   */
+}
+
+
+/* 
+      Media Screen For  _____  768px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:768px) {
+    /*    Heading  */
+    /*    container    */
+    .container {
+        padding: 0 15px !important;
+    }
+    /*    header section    */
+    /*    hero section    */
+    /*    work section   */
+    .work-section-row {
+        flex-wrap: wrap;
+    }
+    .work-section-box {
+        width: 50%;
+        text-align: left !important;
+        padding: 21px 30px;
+    }
+    .work-section-box:last-child {
+        width: 100%;
+    }
+    .work-section-box:hover {
+        transform: scale(1);
+    }
+    .work-section-box h6 {
+        font-size: 25px;
+    }
+    .work-section-box h5 {
+        font-size: 34px;
+        padding: 3px 0;
+    }
+    .work-section-box h5 span {
+        font-size: 14px;
+    }
+    .work-section-box i {
+        font-size: 19px;
+    }
+    .work-section-box p {
+        padding: 5px 0;
+    }
+    /*    our advantages section   */
+    /*    our team section    */
+    .team-row {
+        grid-gap: 15px;
+    }
+    /*    team info section   */
+    .team-info-row {
+        flex-direction: column;
+    }
+    .team-info-box {
+        width: 100%;
+    }
+    .team-info-box:first-child {
+        text-align: left;
+    }
+    /*    why we work section   */
+    .why-we-work-row-box:first-child {
+        height: max-content;
+        padding: 0 0 30px 0;
+    }
+    .why-we-work-row-box:first-child h1 {
+        font-size: 32px;
+    }
+    /*    why we work  button  section   */
+    /*    footer section   */
+    .contact-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-box:last-child {
+        grid-column-start: auto;
+        grid-column-end: auto;
+        text-align: left;
+    }
+    /*   Copy Right in footer  section   */
+}
+
+
+/* 
+      Media Screen For  _____  615px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:615px) {
+    /*    Heading  */
+    /*    container    */
+    /*    header section    */
+    .header-one .logo {
+        margin: 16px 0 16px 0;
+    }
+    .header-one .logo img {
+        width: 60px;
+        height: 43px;
+    }
+    .header-open_close-detail-div h6 {
+        font-size: 13px;
+        font-weight: 300;
+    }
+    /*    hero section    */
+    .hero-content h1 {
+        font-size: 48px;
+        margin-top: 30px;
+    }
+    /*    work section   */
+    .work-section-row {
+        padding: 31px 0;
+    }
+    /*    our advantages section   */
+    .our-advantages h1 {
+        font-size: 41px;
+    }
+    .our-advantages-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-top: 50px;
+    }
+    .our-advantages-content {
+        padding: 40px 0;
+    }
+    /*    our team section    */
+    .team-row {
+        padding-top: 31px;
+    }
+    .team-content {
+        padding: 41px 0;
+    }
+    /*    team info section   */
+    .team-info-row {
+        padding: 36px 0 10px 0;
+    }
+    .team-info-box i {
+        font-size: 55px;
+        padding: 0;
+    }
+    .team-info-box:first-child h4 {
+        font-size: 25px;
+        padding: 18px 0;
+    }
+    .team-info-btn {
+        margin: 18px 0 0 0;
+    }
+    .team-info-box:last-child h4 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+    .team-info-box:last-child h6 {
+        font-size: 13px;
+    }
+    .team-info-box:last-child h6:not(:last-child) {
+        padding-bottom: 30px;
+    }
+    /*    why we work section   */
+    .why-we-work-row {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        padding: 40px 0;
+    }
+    .why-we-work-row-box:first-child {
+        grid-column-end: auto;
+        grid-column-start: auto;
+    }
+    .why-we-work-row-box:first-child {
+        padding-bottom: 18px;
+    }
+    .why-we-work-row-box {
+        width: 100%;
+        padding: 0 18px;
+        text-align: center;
+    }
+    /*    why we work  button  section   */
+    .why-we-work-btn-row {
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .why-we-work-button-section_btn {
+        margin: 6px 0;
+    }
+    /*    footer section   */
+    .contact-row {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+    .contact-box:nth-child(3) {
+        padding: 0 16px;
+    }
+    .contact-box:nth-child(4) {
+        justify-content: left;
+    }
+    /*   Copy Right in footer  section   */
+}
+
+
+/* 
+      Media Screen For  _____  515px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:515px) {
+    /*  preloader  */
+    .preloader-content {
+        transform: scale(0.7);
+    }
+    /*    Heading  */
+    .heading {
+        font-size: 42px !important;
+    }
+    /*    container    */
+    /*    header section    */
+    /*    hero section    */
+    /*    work section   */
+    .work-section-box {
+        width: 100%;
+        padding: 21px 21px;
+    }
+    /*    our advantages section   */
+    .our-advantages-row-box-text {
+        padding: 15px;
+    }
+    /*    our team section    */
+    .team-row {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    /*    team info section   */
+    /*    why we work section   */
+    .why-we-work-row-box:first-child {
+        padding-bottom: 30px !important;
+    }
+    /*    why we work  button  section   */
+    /*    footer section   */
+    /*   Copy Right in footer  section   */
+}
+
+
+/* 
+      Media Screen For  _____  415px    _____________ ________ ___ ___ __ __ _ _  @
+*/
+
+@media screen and (max-width:415px) {
+    /*    Heading  */
+    .heading {
+        font-size: 32px !important;
+    }
+    /*    container    */
+    /*    header section    */
+    .header-one .logo img {
+        width: 48px;
+        height: 33px;
+    }
+    .header-open_close-detail-div h6 {
+        font-size: 12px;
+    }
+    .toggle {
+        height: 29px;
+        margin-right: 10px;
+    }
+    #menuline1,
+    #menuline2,
+    #menuline3 {
+        width: 25px;
+    }
+    /*    hero section    */
+    .hero-content {
+        padding: 65px 0 35px 0;
+    }
+    .hero-content h1 {
+        font-size: 40px;
+        margin-top: 0;
+        line-height: 1.3;
+    }
+    .hero-content h1::first-letter {
+        initial-letter: 2 1;
+        font-size: 25px;
+        margin: 25px 1px 0 0;
+    }
+    .hero-content h1 br {
+        display: block;
+    }
+    .hero-content p {
+        font-size: 13px;
+    }
+    .hero .container {
+        padding: 0 10px;
+    }
+    .hero-row {
+        flex-direction: column;
+    }
+    .hero-btn-2 {
+        margin-top: 5px;
+    }
+    /*    work section   */
+    .work-section-row {
+        padding: 21px 0;
+    }
+    .work-section-box:hover {
+        background-color: rgb(225, 225, 225);
+    }
+    .work-section-box h6 {
+        font-size: 23px;
+        padding: 0;
+    }
+    .work-section-box h5 {
+        font-size: 30px;
+        padding: 5px 0;
+    }
+    .work-section-box i {
+        font-size: 15px;
+    }
+    .work-section-box p {
+        padding: 5px 0;
+    }
+    .work-section-btn {
+        padding-top: 10px;
+    }
+    /*  our advantages section   */
+    .our-advantages-content {
+        padding: 28px 0;
+    }
+    .our-advantages-row {
+        padding-top: 30px;
+    }
+    .our-advantages h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .our-advantages h1 br {
+        display: block;
+    }
+    .our-advantages-row-box-text h4 {
+        padding-bottom: 7px;
+    }
+    .our-advantages-row-box-text p {
+        padding-bottom: 15px;
+    }
+    .our-advantages-btn {
+        padding-bottom: 16px;
+    }
+    /*    our team section    */
+    .team-content {
+        padding: 39px 0;
+    }
+    .team-row {
+        padding-top: 20px;
+    }
+    /*    team info section   */
+    /*    why we work section   */
+    .why-we-work-row {
+        padding: 60px 0;
+    }
+    .why-we-work-row-box h1 {
+        font-size: 25px !important;
+    }
+    .why-we-work-row-box:first-child {
+        padding-bottom: 5px;
+    }
+    .why-we-work-box-para {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    /*    why we work  button  section   */
+    /*    footer section   */
+    .contact-row {
+        padding: 30px 0;
+    }
+    .contact-box input {
+        margin-bottom: 14px;
+    }
+    .contact-box h3 {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+    .contact-box-mail-div {
+        padding-bottom: 10px;
+    }
+    .contact-box-mail-div h5 {
+        font-size: 13px;
+        padding: 3px 0;
+    }
+    .contact-box ul li {
+        padding: 0 0 7px 10px;
+        font-size: 13px;
+    }
+    .contact-box:nth-child(3) {
+        margin: 0;
+    }
+    .contact-box-img img {
+        padding: 19px 0 10px 0;
+        width: 86px;
+    }
+    .contact-box-img p {
+        padding-bottom: 16px;
+    }
+    .street-adress-div {
+        padding: 3px 0;
+    }
+    .street-adress-div h5 {
+        font-size: 12px;
+    }
+    .street-adress-div-icon {
+        width: 21px;
+    }
+    .street-adress-div-icon i {
+        font-size: 14px;
+    }
+    /*   Copy Right in footer  section   */
+    .copy-right {
+        padding: 18px 0;
+    }
+    .copy-right i {
+        font-size: 12px;
+    }
+    .copyright-span {
+        font-size: 11px;
+    }
+    .year-span {
+        font-size: 13px;
+    }
+    .developer-span a {
+        padding: 0 3px;
+        font-size: 12px;
+    }
+}

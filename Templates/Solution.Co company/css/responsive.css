@@ -1,0 +1,271 @@
+/* media query for 767px............. */
+
+@media only screen and (max-width: 991px) {
+    .service-box-txt {
+        width: 80%;
+    }
+    .service-box-icon {
+        width: 20%;
+    }
+    .service-box-txt {
+        margin-left: 5px;
+    }
+    .about-sol-content {
+        padding: 50px 0;
+        flex-direction: column;
+        text-align: left;
+    }
+    .about-box-2 .about-box-2-row h4 {
+        padding: 12px 0;
+    }
+    .progress-bar,
+    .progress-bar2,
+    .progress-bar3,
+    .progress-bar4 {
+        margin: 15px 0;
+    }
+    .about-sol-box p br {
+        display: none;
+    }
+    .about-sol-box p {
+        padding-bottom: 7px;
+        line-height: 1.7;
+    }
+    .about-sol-box h3 {
+        padding: 10px 0 20px 0;
+    }
+    .about-box-2 {
+        margin: 50px 0 0 0;
+        width: 90%;
+    }
+    .pricing-box {
+        flex-basis: 50%;
+    }
+    .pricing-box:nth-child(1),
+    .pricing-box:nth-child(2),
+    .pricing-box:nth-child(3) {
+        transform: translate(0);
+    }
+    .contact-col-third {
+        flex: 1;
+    }
+    .contact-col-third .third-form1 input {
+        width: 150px;
+    }
+    .contact-col-third .third-form2 {
+        width: 315px;
+    }
+    .recent-job {
+        padding-top: 70px;
+    }
+}
+
+
+/* media query for 765px............. */
+
+@media only screen and (max-width: 765px) {
+    .header {
+        position: relative;
+    }
+    /* navigation icon  */
+    .navigate-icon {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .navigate-icon i {
+        font-size: 28px;
+    }
+    .header .logo {
+        margin: 20px 0;
+    }
+    .header nav ul {
+        position: absolute;
+        overflow: hidden;
+        top: 70px;
+        left: 0;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: ease 0.7s !important;
+        transition-property: height;
+        z-index: 9999;
+    }
+    .header nav .show {
+        width: 100%;
+        z-index: 9999;
+        height: 100vw;
+    }
+    .header nav ul li {
+        margin: 15px 0 0 0;
+    }
+    .header nav ul li:first-child {
+        margin-top: 60px;
+    }
+    .header nav ul li:not(:last-child) {
+        margin-right: 0;
+    }
+    .cross {
+        display: none;
+    }
+    .service-box {
+        width: 47%;
+    }
+    .service-box-txt {
+        width: 85%;
+    }
+    .service-box-icon {
+        width: 15%;
+    }
+    .provide-solution .pro-sol-content {
+        padding: 100px 0;
+        justify-content: center;
+    }
+    .about-box-2 .about-box-2-row h4 span {
+        font-family: roboto;
+        padding-left: 250px;
+    }
+    .meet-row .meet-box {
+        width: 49%;
+    }
+    .meet-the-team .meet-box1 .pricing-content h1 {
+        padding: 50px 0 30px 0;
+    }
+    .jobs-row .jobs-box {
+        width: 49%;
+    }
+    .contact .contact-content {
+        flex-direction: column;
+        padding: 70px 0 70px 0;
+    }
+    .contact-col-third {
+        margin-top: 30px;
+    }
+    .contact-col-third .third-form1 {
+        flex-direction: column;
+    }
+    .contact-col-third .third-form2 {
+        width: 230px;
+    }
+    .contact-col-third .third-form1 input {
+        width: 230px;
+    }
+    .contact-col-third .third-form1 .con-input-email {
+        margin-top: 10px;
+    }
+    .contact-col-third .third-form2 button {
+        align-self: start;
+    }
+}
+
+
+/* media query for 575px............. */
+
+@media only screen and (max-width: 575px) {
+    .go-to-top button {
+        right: 16px;
+        bottom: 50px;
+    }
+    .service-box {
+        width: 100%;
+    }
+    .service-box-txt {
+        width: 90%;
+    }
+    .service-box-icon {
+        width: 10%;
+    }
+    .provide-solution-row h1 {
+        font-size: 27px;
+    }
+    .provide-solution .provide-solution-row h2 br {
+        display: block;
+    }
+    .provide-solution .provide-solution-row h2 {
+        font-size: 19px;
+        margin: 14px 0 0 0;
+        line-height: 2.2;
+    }
+    .provide-solution .provide-solution-row p {
+        font-size: 14px;
+        padding-top: 12px;
+    }
+    .about-box-2 .about-box-2-row h4 span {
+        padding-left: 200px;
+    }
+    .about-box-2 {
+        width: 100%;
+    }
+    .about-box-2 .about-box-2-row h4 br {
+        display: block;
+    }
+    .meet-row .meet-box {
+        flex-basis: 100%;
+    }
+    .news-form form {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 250px;
+    }
+    .news-form .news-emal {
+        width: 100%;
+    }
+    .news-form button {
+        margin: 15px 0;
+    }
+    .news-form .news-emal {
+        margin: 0;
+    }
+    .pricing-box {
+        flex-basis: 100%;
+    }
+    .recent-job {
+        padding: 10px 0;
+    }
+    .jobs-row .jobs-box {
+        width: 99%;
+    }
+    .for-responsive-flex {
+        flex-direction: column;
+    }
+    .col-icon-1 a {
+        margin: 0 15px 0 0;
+    }
+    .contact-col-sec {
+        margin: 30px 0 0 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content .footer-icons a {
+        margin: 0 10px;
+    }
+    .footer-text {
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .service-box-txt {
+        width: 85%;
+    }
+    .service-box-icon {
+        width: 15%;
+    }
+    .meet-the-team h1 {
+        font-size: 23px;
+    }
+    .about-box-2 .about-box-2-row h4 span {
+        padding-left: 25%;
+    }
+    .job-ancors a {
+        margin: 7px 7px;
+    }
+}

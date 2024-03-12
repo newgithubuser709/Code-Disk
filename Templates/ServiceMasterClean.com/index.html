@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta unicode  -->
+    <meta charset="UTF-8">
+    <!-- meta browser support latest  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta responsive device scale adjust  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description  -->
+    <meta name="description" content="ServiceMaster Clean is a commercial cleaning company with 65+ years of experience. We set the industry standard for cleaning services.">
+    <!-- meta og site name  -->
+    <meta property="og:site_name" content="Service Master Clean">
+    <!-- for check _______________________________ -->
+    <meta property="og:url" content="https://www.servicemasterclean.com/">
+    <!-- meta og title   -->
+    <meta property="og:title" content="Commercial Cleaning Services | ServiceMaster Clean">
+    <!-- meta og description  -->
+    <meta property="og:description" content="ServiceMaster Clean is a commercial cleaning company with 65+ years of experience. We set the industry standard for cleaning services.">
+    <!-- meta og img  -->
+    <meta property="og:image" content="https://www.servicemasterclean.com/images/social/Social-Share.jpg">
+    <!-- meta og tw card  -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- meta og tw tile  -->
+    <meta name="twitter:title" content="Commercial Cleaning Services | ServiceMaster Clean">
+    <!-- meta og tw description  -->
+    <meta name="twitter:description" content="ServiceMaster Clean is a commercial cleaning company with 65+ years of experience. We set the industry standard for cleaning services.">
+    <!-- meta og tw img  -->
+    <meta name="twitter:image" content="https://www.servicemasterclean.com/images/social/Social-Share.jpg">
+    <!-- website title  -->
+    <title>Comerical Cleaning Services | ServiceMaster Clean</title>
+    <!-- fav icon  -->
+    <link rel="icon" type="image/x-icon" href="fav-icon/favicon.png">
+    <!--google font >>>>> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Ysabeau:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive sheet  -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- root css  -->
+    <link rel="stylesheet" href="css/root.css">
+    <!-- style scss  -->
+    <link rel="stylesheet" href="css/style.scss">
+</head>
+<!-- in the js overfloww property will be remvoved after preload  -->
+
+<body id="body" onload="loading()" style="overflow: hidden;">
+    <!-- _________________ Pre Loader Code ___________________________________________________ -->
+
+    <div class="preloader">
+        <div class="wrap">
+            <img src="images/pre.gif" alt="">
+        </div>
+    </div>
+
+    <!-- ___________ Display None   ___ for make loading effect () _____________________________  -->
+
+    <div class="display-none" style="display: none;">
+        <iframe src="https://www.youtube.com/embed/bflMg0ItKLE"></iframe>
+        <iframe src="https://www.youtube.com/embed/bflMg0ItKLE"></iframe>
+        <iframe src="https://www.youtube.com/embed/bflMg0ItKLE"></iframe>
+    </div>
+
+    <!-- _________________ Chat Box Code ___________________________________________________ -->
+
+    <div id="chat-box-icon">
+        <div class="chat-box-relative">
+            <img class="show3 img-to-open-chat-box" src="images/testimonial2.png " onclick="openchat()" alt="">
+            <img class="show2 img-to-open-chat-box" src="images/testimonial1.png" onclick="openchat()" alt="">
+            <img class="show4 img-to-open-chat-box" src="images/testimonial7.jpg" onclick="openchat()" alt="">
+            <img class="show1 img-to-open-chat-box" src="images/team1.jpg" onclick="openchat()" alt="">
+            <div class="chat-box-icon-close-btn" id="closebtn" onclick="closechat()">
+                <i class="fa-solid fa-xmark fa-bounce"></i>
+            </div>
+            <div class="chat-box-icon-anim">
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat Box  -->
+
+    <div class="chat-div" id="chatdiv">
+        <div class="chat-div-outter">
+            <i class="fa-solid fa-down-left-and-up-right-to-center close" onclick="closechat()"></i>
+            <p>
+                We're available <br> right now to <br> chat!
+            </p>
+            <div class="chat-div-inner">
+                <form>
+                    <div class="chatdiv-send-btn">
+                        <input type="text" placeholder="your message">
+                        <button onclick="sendmsg()"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="btn-logo">
+                <img src="images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- ________________  Header & Hero  Mobile  section Starting _________________________________________________   -->
+
+    <section class="main">
+        <div class="header-mobile">
+            <div class="navigation-icon-mobile">
+                <i class="fa-solid fa-bars" style="color: #000000;" id="burger" onclick="bars()"></i>
+                <i class="fa-solid fa-xmark" style="color: #000000;" id="close" onclick="cross()"></i>
+            </div>
+            <div class="logo-mobile">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="call-icon-mobile">
+                <a href="tel:+1234567890"> <i class="fa-solid fa-phone" style="color: #000000;"></i></a>
+            </div>
+        </div>
+
+        <!-- hero mobile    -->
+        <div class="hero-mobile">
+            <!-- absolute ul  -->
+            <ul class="hero-mobile-ul" id="mobileul">
+                <li><a href="#">comerical cleaning</a><i class="fa-solid fa-plus" style="color: #040506;"></i></li>
+                <li><a href="#">industries we serve</a><i class="fa-solid fa-plus" style="color: #040506;"></i></li>
+                <li><a href="#">why serviceMaster clean</a><i class="fa-solid fa-plus" style="color: #040506;"></i></li>
+                <li><a href="#">national accounts</a><i class="fa-solid fa-plus" style="color: #040506;"></i></li>
+                <li><a href="#">careers</a></li>
+                <li><a href="#">franchise opportunuties</a></li>
+                <li><a href="#">about us</a></li>
+            </ul>
+        </div>
+        <!-- hero content  -->
+        <div class="hero-content-mob">
+            <div class="hero-box-mob">
+                <h2>
+                    A HIGHER STANDARD<br>OF CLEAN
+                </h2>
+                <p>
+                    Delivering Expert Commercial Cleaning
+                    <br>for Your Facility and Everyone in It
+                </p>
+                <div class="hero-section-btn">
+                    <div class="mobile-hero-sec-btn1 btn-anim">
+                        <div class="mobile-hero-sec-btn-outter1 btn-anim-outer-child">
+                            <div class="mobile-hero-sec-btn-inner1 btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">our services</a>
+                    </div>
+                    <div class="mobile-hero-sec-btn2 btn-anim">
+                        <div class="mobile-hero-sec-btn-outter2 btn-anim-outer-child">
+                            <div class="mobile-hero-sec-btn-inner2 btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">find your location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ________________  Header Section Starting _________________________________________________   -->
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo...">
+            </div>
+            <nav>
+                <div class="hdr-nav-one">
+                    <ul>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">franchise opportunities</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li class="hdr-first-nav-btn btn-anim">
+                            <div class="hdr-btn-outter btn-anim-outer-child">
+                                <div class="hdr-btn-inner btn-anim-inner-child"></div>
+                            </div>
+                            <a href="#">find your location</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hdr-nav-two">
+                    <ul>
+                        <li> <a href="#">comerical cleaning</a>
+                            <div class="hdr-li-menu">
+                                <div class="litems"><a href="#">janitorial services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">comperehnsive cleaning services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">project-base cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">disinfection cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">covid-19 cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">green cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">speviality cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">industries we serve</a>
+                            <div class="hdr-li-menu">
+                                <div class="litems"><a href="#">janitorial services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">disinfection cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">green cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">speviality cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">why serviceMaster clean</a>
+                            <div class="hdr-li-menu">
+                                <div class="litems"><a href="#">janitorial services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">comperehnsive cleaning services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">project-base cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">covid-19 cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">green cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">speviality cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">national accounts</a>
+                            <div class="hdr-li-menu for-last">
+                                <div class="litems"><a href="#">janitorial services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">comperehnsive cleaning services<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">project-base cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">disinfection cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">covid-19 cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">green cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                                <div class="litems"><a href="#">speviality cleaning<i class="fa-solid fa-chevron-right"></i></a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ________________  Hero Section Starting _________________________________________________   -->
+
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-box">
+                    <h1>
+                        A HIGHER STANDARD
+                        <br>OF CLEAN
+                    </h1>
+                    <p>
+                        Delivering Expert Commercial Cleaning
+                        <br>for Your Facility and Everyone in It
+                    </p>
+                    <div class="hero-section-btn">
+                        <div class="hero-btn-1 btn-anim">
+                            <div class="hero-btn-outer-1 btn-anim-outer-child">
+                                <div class="hero-btn-inner-1 btn-anim-inner-child"></div>
+                            </div>
+                            <a href="#">our service</a>
+                        </div>
+                        <div class="hero-btn-2 btn-anim">
+                            <div class="hero-btn-outer-2 btn-anim-outer-child">
+                                <div class="hero-btn-inner-2 btn-anim-inner-child"></div>
+                            </div>
+                            <a href="#">find your location</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- _________ Leading in Comerical Section Starting _____________________________   -->
+
+    <div class="leading-in-comerical">
+        <div class="container">
+            <div class="leading-in-comerical-first-row">
+                <div class="leading-in-comerical-first-row-colom leading-in-comerical-first-row-colom1">
+                    <div class="leading-in-comerical-first-row-colom-img">
+                        <img src="images/section.jpg" alt="">
+                    </div>
+                </div>
+                <div class="leading-in-comerical-first-row-colom leading-in-comerical-first-row-colom2">
+                    <div class="leading-in-comerical-first-row-text">
+                        <h3 class="h-three">
+                            LEADING IN COMMERCIAL CLEANING
+                        </h3>
+                        <h2 class="h-two">
+                            Providing Exceptional Services
+                        </h2>
+                        <p class="para">
+                            ServiceMaster Clean provides commercial cleaning services tailored to your needs. From
+                            <a href="#">hospitals</a> to industrial
+                            <a href="#">warehouses,</a> we are committed to providing a safe and healthy work environment for your employees and customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second row  -->
+
+    <div class="container leading-in-comerical-second-row-container">
+        <div class="leading-in-comerical-second-row">
+            <div class="leading-incomerical-second-row-box">
+                <p>
+                    65+ YEARS OF CLEANING <br> EXPERIENCE
+                </p>
+            </div>
+            <div class="leading-incomerical-second-row-box">
+                <p>
+                    1,200+ LOCATIONS <br> NATIONWIDE
+                </p>
+            </div>
+            <div class="leading-incomerical-second-row-box">
+                <p>
+                    75,000+ HOMES AND <br> BUSINESSES SERVED
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- _______________  Comerical Cleaning Section Starting ____________________________________________   -->
+
+    <div class="comerical-cleaning-section">
+        <div class="container">
+            <div class="comerical-cleaning-row">
+                <div class="comerical-cleaning-colom comerical-cleaning-colom1">
+                    <div class="comerical-cleaning-colom-text">
+                        <h3 class="h-three">
+                            COMMERCIAL CLEANING <br> TAILORED TO YOUR NEEDS
+                        </h3>
+                        <h2 class="h-two">
+                            Any Industry. Any Building.
+                        </h2>
+                        <p class="para">
+                            ServiceMaster Clean is committed to providing a healthy work environment for your customers and employees. We offer a variety of customizable cleaning options designed for your specific needs. Whether it's one building or several, our goal is to make
+                            your business shine with our higher standard of clean. </p>
+                        <div class="comerical-cleaning-col-1-btn btn-anim ">
+                            <div class="comerical-cleaning-col-1-btn-outter btn-anim-outer-child">
+                                <div class="comerical-cleaning-col-1-btn-inner btn-anim-inner-child"></div>
+                            </div>
+                            <a href="#">Get Your Free Quote<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="comerical-cleaning-colom comerical-cleaning-colom2 ">
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home1.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    healthCare<br>Envoirmental<br>services
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home2.jpg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    office building<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home3.webp" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    industrial<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home4.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    banks &<br> financial <br> institution<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home5.jpg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    hospitality<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home6.webp" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    education<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home7.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    religous<br> building<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home8.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    residential floor<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home9.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    government building<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home10.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    event center<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <a href="#">
+                            <img src="images/home11.jpeg" alt="">
+                            <div class="comerical-cleaning-colom2-colom-boxes-overlay">
+                                <p>
+                                    reCreation & <br> shopping<br>cleaning
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="comerical-cleaning-colom2-colom-boxes">
+                        <div class="comerical-cleaning-btn btn-anim">
+                            <div class="comerical-cleaning-btn-outter btn-anim-outer-child">
+                                <div class="comerical-cleaning-btn-inner btn-anim-inner-child"></div>
+                            </div>
+                            <a href="#">view all<br>industries<i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ______________ Benifit Of Comerical Section Starting ___________________________________________   -->
+
+    <div class="benifit-comerical">
+        <div class="container">
+            <div class="benifit-comerical-row">
+                <div class="benifit-comerical-colom benifit-comerical-col-1">
+                    <div class="benifit-comerical-col-1-img">
+                        <img src="images/content1.jpg" alt="">
+                    </div>
+                    <div class="benifit-comerical-col-1-img">
+                        <img src="images/content2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="benifit-comerical-colom benifit-comerical-col-2">
+                    <h3 class="h-three">
+                        BENEFITS OF COMMERCIAL CLEANING FOR YOUR<br>BUSINESS
+                    </h3>
+                    <div class="benifit-comerical-col-2-boxes">
+                        <div class="benifit-comerical-col-2-boxes-icon">
+                            <i class="fa-solid fa-people-robbery"></i>
+                        </div>
+                        <div class="benifit-comerical-col-2-boxes-text">
+                            <h4>
+                                SANIMASTER DISINFECTION SERVICES
+                            </h4>
+                            <p>
+                                ServiceMaster Clean’s SaniMaster service offers customizable levels of protection for your business to provide a more tailored approach to your disinfection needs. Whether you’re in need of extended surface disinfection and air filtration, or a more simple
+                                approach to fit your facility’s busy schedule, our SaniMaster service can be customized to your needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benifit-comerical-col-2-boxes">
+                        <div class="benifit-comerical-col-2-boxes-icon">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <div class="benifit-comerical-col-2-boxes-text">
+                            <h4>
+                                MULTIPLE FACILITY TYPES
+                            </h4>
+                            <p>
+                                Our team of cleaning experts have experience with facilities of all sizes and from different industries, and will work with you to ensure that your needs are met. You can rest assured knowing that our team members are professionally trained to address
+                                your facility’s unique needs. </p>
+                        </div>
+                    </div>
+                    <div class="benifit-comerical-col-2-boxes">
+                        <div class="benifit-comerical-col-2-boxes-icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="benifit-comerical-col-2-boxes-text">
+                            <h4>
+                                OUR SERVICES, YOUR SCHEDULE
+                            </h4>
+                            <p>
+                                We'll familiarize ourselves with your facility and then create a customized cleaning and disinfecting plan that perfectly accommodates your needs. We can schedule our cleaning services at a time and frequency that works best for you and your facility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benifit-comerical-col-2-boxes">
+                        <div class="benifit-comerical-col-2-boxes-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="benifit-comerical-col-2-boxes-text">
+                            <h4>
+                                SAVE TIME & MONEY
+                            </h4>
+                            <p>
+                                Outsourcing your cleaning services can help streamline your expenses and reduce cleaning time by about 25% while ensuring a spotless, disinfected environment.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- btn  -->
+                    <div class="benefit-comerical-btn btn-anim">
+                        <div class="benefit-comerical-btn-outer btn-anim-outer-child">
+                            <div class="benefit-comerical-btn-inner btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">Get Started Now<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ______________ Who ServiceMaster Section Starting _____________________________________   -->
+
+    <div class="who-servicemaster">
+        <div class="container">
+            <h3>
+                WHO IS SERVICE MASTER.
+            </h3>
+            <div class="who-servicemaster-row">
+                <div class="who-servicemaster-box">
+                    <div class="who-servicemaster-count">
+                        <p>
+                            1
+                        </p>
+                    </div>
+                    <div class="who-servicemaster-txt">
+                        <h5>
+                            WE ARE EXPERTS.
+                        </h5>
+                        <p>
+                            We dominate the industry in scale and scope that consistently delivers exceptional results.
+                        </p>
+                    </div>
+                </div>
+                <div class="who-servicemaster-box">
+                    <div class="who-servicemaster-count">
+                        <p>
+                            2
+                        </p>
+                    </div>
+                    <div class="who-servicemaster-txt">
+                        <h5>
+                            WE ARE COMMITTED.
+                        </h5>
+                        <p>
+                            Everything we do is guided by our customers and their needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="who-servicemaster-box">
+                    <div class="who-servicemaster-count">
+                        <p>
+                            3
+                        </p>
+                    </div>
+                    <div class="who-servicemaster-txt">
+                        <h5>
+                            WE ARE COMPLETE.
+                        </h5>
+                        <p>
+                            We engage in proactive behavior to provide exceptional cleaning every time.
+                        </p>
+                    </div>
+                </div>
+                <div class="who-servicemaster-box">
+                    <div class="who-servicemaster-count">
+                        <p>
+                            4
+                        </p>
+                    </div>
+                    <div class="who-servicemaster-txt">
+                        <h5>
+                            WE ARE DRIVEN.
+                        </h5>
+                        <p>
+                            We strive to pursue the highest standards and continuously improve in all aspects of our business.
+                        </p>
+                    </div>
+                </div>
+                <div class="who-servicemaster-box">
+                    <div class="who-servicemaster-count">
+                        <p>
+                            5
+                        </p>
+                    </div>
+                    <div class="who-servicemaster-txt">
+                        <h5>
+                            WE ARE DEDICATED.
+                        </h5>
+                        <p>
+                            We are here for the long haul. Our goal is to provide a consistent cleaning service to ensure ongoing customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- who servicemaster btn -->
+
+            <div class="who-servicemaster-btn-div">
+                <div class="who-servicemaster-btn btn-anim">
+                    <div class="who-servicemaster-btn-outter btn-anim-outer-child">
+                        <div class="who-servicemaster-btn-inner btn-anim-inner-child"></div>
+                    </div>
+                    <a href="#">Get Started Now<i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ______________ certified Section Starting _________________________________________   -->
+
+    <div class="certified">
+        <div class="container">
+            <div class="certified-row">
+                <div class="certified-box certified-box1">
+                    <div class="certified-img">
+                        <img src="images/content3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="certified-box certified-box2">
+                    <h3 class="h-three">
+                        CERTIFIED CLEANERS FOR YOUR BUSINESS
+                    </h3>
+                    <p class="para">
+                        ServiceMaster Clean uses the latest technology and equipment to free your business from dust, dirt, and debris. Our cleaning certifications and memberships include:
+                    </p>
+                    <div class="certified-box2-images">
+                        <img src="images/AE.png" alt="">
+                        <img src="images/IEHA.png" alt="">
+                    </div>
+                    <div class="certified-btn who-servicemaster-btn btn-anim">
+                        <div class="certified-btn-outter who-servicemaster-btn-outter btn-anim-outer-child">
+                            <div class="certified-btn-inner who-servicemaster-btn-inner btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">see our approach<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ______________ Franchise Customer Section Starting _______________________________________   -->
+
+    <div class="franchise ">
+        <div class="container">
+            <div class="franchise-first-row">
+                <div class="franchise-box franchise-box1">
+                    <h3 class="h-three">
+                        HEAR FROM OUR FRANCHISEE'S<br>CUSTOMERS
+                    </h3>
+                    <p class="para">
+                        "ServiceMaster does an excellent job of tailoring a commercial cleaning service to match the customer's expectations. They are also very flexible during weeks where scheduled service might fall on a holiday. I highly recommend them for janitorial services."
+                        - Brian B
+                    </p>
+                    <div class="franchise-btn btn-anim">
+                        <div class="franchise-btn-outter btn-anim-outer-child">
+                            <div class="franchise-btn-inner btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">view all stories<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="franchise-box franchise-box2" data-aos="fade-left">
+                    <div class="franchise-box2-img">
+                        <img src="images/content8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--__________________ franchise another section _______________________________________________ -->
+
+    <div class="franchise-another-section">
+        <div class="container">
+            <div class="franchie-another-section-row">
+                <a href="#">
+                    <div class="franchise-another-section-row-box">
+                        <h5>
+                            cleaning standard set in<br>place to follow CDC
+                            <br>guidline<i class="fa-solid fa-chevron-right"></i>
+                        </h5>
+                        <div class="franchise-another-section-box-anim">
+                            <h4>
+                                destination<br>service
+                            </h4>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="franchise-another-section-row-box">
+                        <h5>
+                            cleaning standard set in<br>place to follow CDC
+                            <br>guidline<i class="fa-solid fa-chevron-right"></i>
+                        </h5>
+                        <div class="franchise-another-section-box-anim">
+                            <h4>
+                                destination<br>service
+                            </h4>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="franchise-another-section-row-box">
+                        <h5>
+                            cleaning standard set in<br>place to follow CDC
+                            <br>guidline<i class="fa-solid fa-chevron-right"></i>
+                        </h5>
+                        <div class="franchise-another-section-box-anim">
+                            <h4>
+                                destination<br>service
+                            </h4>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="franchise-another-section-row-box">
+                        <h5>
+                            cleaning standard set in<br>place to follow CDC
+                            <br>guidline<i class="fa-solid fa-chevron-right"></i>
+                        </h5>
+                        <div class="franchise-another-section-box-anim">
+                            <h4>
+                                destination<br>service
+                            </h4>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- _____________ Keep Clean Section Starting ______________________________________________   -->
+
+    <div class="keep-clean">
+        <div class="keep-row">
+            <div class="keep-box keep-box1">
+                <div class="keep-box1-txt">
+                    <h3 class="h-three">
+                        KEEPING OUR COMMUNITIES<br>CLEAN
+                    </h3>
+                    <p class="para">
+                        All of our franchise businesses are locally owned and operated, ensuring that 100% of staff members live in the communities they serve. We're proud to serve our neighborhoods and contribute to a safe and healthy environment for all.
+                    </p>
+                    <div class="keep-clean-btn btn-anim">
+                        <div class="keep-clean-btn-outter btn-anim-outer-child">
+                            <div class="keep-clean-btn-inner btn-anim-inner-child"></div>
+                        </div>
+                        <a href="#">find a location<i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="keep-box2">
+                <div class="keep-box-2-img1">
+                </div>
+                <div class="keep-box-2-img2"> <img src="images/content5.jpg" data-aos="fade-right" alt=""></div>
+                <div class="keep-box-2-img3"> <img src="images/content4.jpg" data-aos="fade-left" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- ________________  Footer Section Starting _________________________________________________   -->
+
+    <footer>
+        <div class="footer">
+            <div class="contact-shadow">
+                <div class="container">
+                    <div class="contact">
+                        <div class="contact-box contact-box1">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="contact-box contact-box2">
+                            <p>
+                                +923414077978<br>FIND A LOCATION
+                            </p>
+                            <form>
+                                <input type="text" placeholder="enter zip"><button>go</button>
+                            </form>
+                        </div>
+
+                        <div class="contact-box contact-box3">
+                            <ul>
+                                <li><a href="#">comerical cleaning</a></li>
+                                <li><a href="#">why serviceMaster clean</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">list of office location</a></li>
+                                <li><a href="#">careers</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">industries we serve</a></li>
+                                <li><a href="#">national accounts</a></li>
+                                <li><a href="#">franchise opportunities</a></li>
+                                <li><a href="#">clean blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-box contact-box4">
+                            <div class="contact-box4-content">
+                                <div class="contact-box4-icon-first-row">
+                                    <div class="contact-box-4-btn btn-anim">
+                                        <div class="contact-box-4-btn-outer btn-anim-outer-child">
+                                            <div class="contact-box-4-btn-inner btn-anim-inner-child"></div>
+                                        </div>
+                                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="contact-box-4-btn btn-anim">
+                                        <div class="contact-box-4-btn-outer btn-anim-outer-child">
+                                            <div class="contact-box-4-btn-inner btn-anim-inner-child"></div>
+                                        </div>
+                                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-box4-icon-sec-row">
+                                    <div class="contact-box-4-btn btn-anim">
+                                        <div class="contact-box-4-btn-outer btn-anim-outer-child">
+                                            <div class="contact-box-4-btn-inner btn-anim-inner-child"></div>
+                                        </div>
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="contact-box-4-btn-custom btn-anim">
+                                        <div class="contact-box-4-btn-outer btn-anim-outer-child">
+                                            <div class="contact-box-4-btn-inner-custom btn-anim-inner-child"></div>
+                                        </div>
+                                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> SEARCH</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <main-footer>
+        <div class="main-footer-section">
+            <p>
+                <span>2023</span> all right reserved @haseeb
+            </p>
+            <main>
+                <a href="#">site map</a>
+                <a href="#">privasy policy</a>
+                <a href="#">assesibilty statement</a>
+                <a href="#">do not sell/share my info</a>
+            </main>
+        </div>
+    </main-footer>
+
+    <!--  ______ _ _ __ ___ JS Link  ___ __ _ _ _________________________   -->
+
+    <script src="jscript.js"></script>
+</body>
+
+</html>

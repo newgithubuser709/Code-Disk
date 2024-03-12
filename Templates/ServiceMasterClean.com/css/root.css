@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*   
+          Font Faimly
+*/
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+    src: url();
+}
+
+
+/*  
+          Root 
+*/
+
+:root {
+    --yellow: rgb(253, 235, 38);
+    --aqua: rgb(31, 176, 195);
+    --aquaDark: rgb(15, 179, 194);
+    --gray: rgb(87, 87, 87);
+}
+
+
+/*
+            h3 
+*/
+
+.h-three {
+    font-size: 27px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+
+/*   
+          h2 
+*/
+
+.h-two {
+    font-size: 25px;
+    color: var(--aqua);
+    font-weight: 500;
+    word-wrap: normal;
+}
+
+
+/*
+         p  
+*/
+
+.para {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* 
+        para   ancor  
+*/
+
+.para a {
+    color: var(--aqua);
+    text-decoration: underline;
+}
+
+
+/* 
+           btn anim
+*/
+
+.btn-anim {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.btn-anim-outer-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    pointer-events: none;
+    z-index: 3333;
+    transition: all 0.3s;
+}
+
+.btn-anim-inner-child {
+    border: 1px solid white;
+    z-index: 3333;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-anim:hover .btn-anim-outer-child {
+    padding: 6px 6px;
+}
+
+
+/* 
+                  Breakpoint For 415px        <_____________!
+*/
+
+@media only screen and (max-width:415px) {
+    /*
+            h3 
+*/
+    .h-three {
+        font-size: 21px;
+    }
+    /*   
+        h2 
+*/
+    .h-two {
+        font-size: 18px;
+    }
+}
+
+
+/*            
+                   Animations   _______________ !
+*/
+
+
+/*   _________________________________________________________________________________ */
+
+
+/*  ___________________________________________________________
+
+             Header li menu animation .div_
+    ___________________________________________________________  */
+
+.hdr-li-menu {
+    transition: 0.5s;
+    opacity: 0;
+    position: absolute;
+    left: -18%;
+    top: 180%;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: white;
+    width: 270px;
+    padding: 25px 15px 10px 15px;
+}
+
+.hdr-li-menu .litems {
+    display: flex;
+    align-items: center;
+}
+
+.hdr-li-menu .litems a {
+    color: black !important;
+    display: inline-block !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 7px 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.hdr-li-menu .litems i {
+    color: var(--aqua);
+    margin-left: 7px;
+    font-size: 0px;
+    transition: 0.3s;
+}
+
+.hdr-li-menu .litems a:hover i {
+    font-size: 13px;
+}
+
+.hdr-nav-two ul li:hover .hdr-li-menu {
+    opacity: 100;
+    visibility: visible;
+    margin-top: -23px;
+}
+
+.for-last {
+    right: -25% !important;
+    left: auto;
+}
+
+
+/* ____________________________________________________________________________________________________________ */
+
+
+/*   ___________________________________________________________
+
+         Pre Loader animation Starting
+     ___________________________________________________________  */
+
+.preloader-js {
+    width: 0px;
+    transition: width 2s linear 1s;
+}
+
+.preloader {
+    z-index: 999999999;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFD87B;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.1s 1s, opacity 0.5s;
+    overflow: hidden;
+}
+
+.preloader img {
+    display: block;
+    width: 210px;
+}
+
+
+/*   _________________________________________________________________________________________________________ */
+
+
+/*   ___________________________________________________________
+
+          Chat Box Menu animation .div_
+     ___________________________________________________________  */
+
+#chat-box-icon {
+    position: fixed;
+    right: 30px;
+    bottom: 16px;
+    border-radius: 50%;
+    border: none;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.chat-box-relative {
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-box-icon-close-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55px;
+    height: 55px;
+    background-color: var(--aquaDark);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-box-icon-close-btn i {
+    color: white;
+    font-size: 19px;
+}
+
+.img-to-open-chat-box {
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+    z-index: 99999999;
+    position: absolute;
+    pointer-events: all;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.chat-box-icon-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border: 4px solid var(--aqua);
+    border-radius: 50%;
+    animation: anim infinite 1.3s;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.show1 {
+    animation: show1 infinite 30s;
+}
+
+.show2 {
+    animation: show2 infinite 30s;
+    animation-delay: 30s;
+}
+
+.show3 {
+    animation: show3 infinite 30s;
+    animation-delay: 60s;
+}
+
+.show4 {
+    animation: show4 infinite 30s;
+    animation-delay: 90s;
+}
+
+@keyframes anim {
+    0% {
+        opacity: 100;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes show1 {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes show2 {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes show3 {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes show4 {
+    0% {
+        display: block;
+    }
+    100% {
+        display: none;
+    }
+}
+
+
+/* ____________________________________________________________________________________________________________ */
+
+
+/*
+              chat div 
+*/
+
+.chat-div {
+    position: fixed;
+    right: 30px;
+    bottom: 90px;
+    background-color: var(--aquaDark);
+    z-index: 999999;
+    transition: ease-in-out 0.5s;
+    box-shadow: 1px 1px 1pc 2px rgba(0, 0, 0, 0.119);
+    animation-delay: 3s;
+    height: 470px;
+    width: 330px;
+    overflow: hidden;
+    opacity: 100;
+}
+
+.chat-div p {
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+    padding: 50px 0 50px 35px;
+    text-align: left;
+}
+
+.chat-div-outter {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: var(--gray);
+}
+
+.chat-div-inner {
+    width: 100%;
+}
+
+.chat-div-inner form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+    width: 100%;
+}
+
+.chatdiv-send-btn {
+    width: max-content;
+    position: relative;
+}
+
+.chatdiv-send-btn i {
+    padding: 9px;
+    transition: 0.3s;
+}
+
+.chatdiv-send-btn i:hover {
+    color: var(--gray);
+}
+
+.chat-div-inner input {
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 280px;
+    padding-left: 12px;
+    box-shadow: 2px 2px 2pc rgba(0, 0, 0, 0.221);
+}
+
+.chat-div-inner input::placeholder {
+    text-transform: capitalize;
+    color: rgba(58, 58, 58, 0.726);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.chat-div-inner button {
+    z-index: 3;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 21px;
+    top: 0;
+    bottom: 0;
+}
+
+.chat-div-inner button i {
+    font-size: 19px;
+    color: var(--aqua);
+    cursor: pointer;
+}
+
+.btn-logo {
+    background-color: white;
+    padding: 50px 15px 19px 15px;
+}

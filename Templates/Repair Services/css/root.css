@@ -1,0 +1,188 @@
+/* 
+   ________________ __________ ______ ______ _____ _____ ____ ___ ___ __ _ _ _                                                                       
+
+*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(44, 44, 44)
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--yelloy);
+}
+
+
+/*  button element
+
+<div class=" btn-root">
+     <a href="#">call now</a>
+ </div>
+ 
+*/
+
+
+/*   button classes with dif color 
+
+     btn-yellow-fill
+     btn-purple-fill
+     btn-purple-transparent
+     btn-yellow-fill-color-white
+     btn-purple-fill-color-white
+
+*/
+
+
+/*  heading class  
+
+
+<h1 class="heading">
+     any heading U want
+</h1>
+ 
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-overlay: rgba(41, 41, 41, 0.726);
+    --gray: rgb(41, 41, 41);
+    --hover-color: rgb(194, 194, 194);
+    --purple: rgb(30, 109, 220);
+    --dark-purple: rgb(0, 37, 89);
+    --yelloy: rgb(255, 205, 5);
+}
+
+.container {
+    padding: 0 25px;
+    margin: auto;
+    max-width: 1170px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+li {
+    list-style-type: none;
+}
+
+.para {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.674);
+    line-height: 1.6;
+}
+
+.heading {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 100;
+    font-size: 70px;
+}
+
+.btn-root a {
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px 26px;
+    transition: 0.4s;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn-root a:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-purple-transparent a {
+    background: transparent !important;
+    border-color: var(--purple) !important;
+    color: var(--purple) !important;
+}
+
+.btn-purple-transparent a:hover {
+    background-color: var(--purple) !important;
+    color: white !important;
+}
+
+.btn-purple-fill a {
+    background: var(--purple) !important;
+    border-color: var(--purple) !important;
+    color: white !important;
+}
+
+.btn-purple-fill a:hover {
+    background-color: transparent !important;
+    color: var(--purple) !important;
+}
+
+.btn-yellow-fill a {
+    background: var(--yelloy) !important;
+    border-color: var(--yelloy) !important;
+    color: black !important;
+}
+
+.btn-yellow-fill a:hover {
+    background-color: transparent !important;
+}
+
+.btn-purple-fill-color-white a:hover {
+    color: white !important;
+}
+
+.btn-yellow-fill-color-white a {
+    background-color: var(--yelloy);
+    color: black;
+    border-color: var(--yelloy);
+}
+
+.btn-yellow-fill-color-white a:hover {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999999999999999999999999999999;
+}
+
+.preloader-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.preloader-img {
+    width: 100px;
+    margin-left: -21px;
+}
+
+.text {
+    text-transform: capitalize;
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Charmonman', cursive;
+}
+
+.text img {
+    width: 45px;
+    margin: 0 9px;
+}

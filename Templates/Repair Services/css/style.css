@@ -1,0 +1,926 @@
+/* _______________________________________________________________________________________________ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Charmonman', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    src: url();
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* _______________________________________________________________________________________________ */
+
+ :root {
+    --bg-overlay: rgba(41, 41, 41, 0.726);
+    --gray: rgb(41, 41, 41);
+    --hover-color: rgb(194, 194, 194);
+    --purple: rgb(30, 109, 220);
+    --dark-purple: rgb(0, 37, 89);
+    --yelloy: rgb(255, 205, 5);
+}
+
+
+/* _______________________________________________________________________________________________ */
+
+.overlay {
+    background: radial-gradient( rgba(0, 0, 0, 0.594), rgba(0, 0, 0, 0.74));
+    width: 100%;
+    height: 100%;
+}
+
+
+/* _______________________________________________________________________________________________ */
+
+.fill-overlay {
+    background-color: rgba(36, 36, 36, 0.594);
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+ ______________    Header   Section   ___________________________________________________________ >>>>>>
+
+*/
+
+header {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+}
+
+.header-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--gray);
+    color: white;
+}
+
+.header-one .logo {
+    margin: 16px 0 16px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-one .logo img {
+    width: 80px;
+    height: 55px;
+    display: block;
+}
+
+.header-one .logo a {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    margin: 0 14px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.header-one .logo a:last-child:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    background-color: var(--yelloy);
+    height: 1px;
+    width: 0;
+    transition: 0.5s;
+}
+
+.header-one .logo a:last-child:hover::after {
+    width: 100%;
+}
+
+.header-one .logo a:hover {
+    color: var(--hover-color);
+}
+
+.header-open_close-detail-div {
+    display: flex;
+    align-items: center;
+    transform: translateX(-20%);
+}
+
+.header-open_close-detail-div h6,
+.header-open_close-detail-div a {
+    color: white;
+    font-size: 15px;
+    margin: 0 15px;
+    transition: 0.4s;
+}
+
+.header-open_close-detail-div a:hover {
+    color: var(--hover-color);
+}
+
+.header-open_close-detail-div-num {
+    position: relative;
+}
+
+.header-open_close-detail-div-num::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+    background-color: var(--purple);
+    height: 1px;
+    width: 0;
+    transition: ease 0.5s;
+}
+
+.header-open_close-detail-div-num:hover:after {
+    width: 77%;
+}
+
+.header-one-btn_call-now {
+    margin-right: 25px;
+}
+
+
+/*
+ ______________    nav cross/lines btn   ___________________________________________________________ >>>>>>
+
+*/
+
+.toggle {
+    display: none;
+    width: max-content;
+    margin-right: 25px;
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    height: 30px;
+}
+
+#menuline1,
+#menuline2,
+#menuline3 {
+    background-color: var(--yelloy);
+    width: 35px;
+    height: 2px;
+    transition: 0.7s;
+    pointer-events: none;
+}
+
+.menuline1-anim {
+    transform: rotate(45deg) translateY(14px) !important;
+}
+
+.menuline2-anim {
+    opacity: 0 !important;
+}
+
+.menuline3-anim {
+    transform: rotate(-45deg) translateY(-14px)!important;
+}
+
+
+/*
+ ______________    Header  two  ___________________________________________________________ >>>>>>
+
+*/
+
+.header-two {
+    background-color: var(--gray);
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    position: relative;
+    transition: 0.9s;
+}
+
+.header-two-nav-cross-icon {
+    display: none;
+    color: var(--yelloy);
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+.header-two-nav-cross-icon i {
+    cursor: pointer;
+}
+
+.header-two nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 21px 0;
+}
+
+.header-two nav ul li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 16px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.header-two nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+.header-two nav ul li i {
+    color: white;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+
+/*
+     __________  li >>> more li div section  _________________________________________  >>>>>>
+
+*/
+
+.services {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    color: white;
+    cursor: pointer;
+}
+
+.services-items {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.5s;
+    width: 60px;
+    overflow: visible;
+}
+
+.services-items ul {
+    margin-top: 31px;
+    flex-direction: column;
+    padding: 30px 0 !important;
+    color: white;
+    background-color: var(--gray);
+    width: max-content;
+}
+
+.services-items ul li {
+    width: 100%;
+}
+
+.services-items ul li a {
+    font-size: 12px !important;
+    width: 100%;
+    padding: 7px 30px;
+    margin: 0 !important;
+}
+
+.services-items ul li a i {
+    padding-left: 9px;
+    transition: 0.6s;
+    opacity: 0;
+    font-size: 5px;
+}
+
+.services-items ul li a:hover i {
+    padding-left: 21px;
+    opacity: 100;
+    font-size: 10px;
+}
+
+.services:hover .services-items {
+    visibility: visible;
+    opacity: 100;
+    transform: translateY(-40px);
+}
+
+
+/* ser mob  */
+
+.services-items-mob {
+    display: none;
+    z-index: 9999999999999999;
+}
+
+.services-items-mob a {
+    color: black !important;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block !important;
+    padding: 4px 0;
+    transition: 0.3s;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.services-items-mob ul {
+    padding: 0 !important;
+}
+
+.services-items-mob ul li a i {
+    color: black;
+    font-size: 1px;
+    opacity: 0;
+    transition: font-size 0.5s, transform 0.6s, opacity 0.5s;
+}
+
+.services-items-mob a:hover i {
+    font-size: 12px;
+    transform: translateX(15px);
+    opacity: 100;
+}
+
+.services-items-mob a:hover {
+    color: rgb(19, 117, 245) !important;
+}
+
+.ServiceItemMob-anim {
+    height: 100px;
+    padding: 10px 0;
+}
+
+.ServiceItemMob-anim {
+    height: 100px !important;
+    padding: 10px 0;
+    overflow: visible;
+}
+
+
+/*
+ ______________    Hero  Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.hero {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 70px 0 100px 0;
+    width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 87px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    margin-top: 120px;
+}
+
+.hero-content h1 br {
+    display: none;
+}
+
+.hero-content p {
+    line-height: 1.6;
+}
+
+.hero-row {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-btn-1,
+.hero-btn-2 {
+    margin: 0 7px;
+}
+
+.hero-btn-1 a {
+    border-color: var(--purple) !important;
+    background-color: var(--purple) !important;
+}
+
+.hero-btn-1 a:hover {
+    border-color: var(--purple) !important;
+    background: transparent !important;
+    color: var(--purple) !important;
+}
+
+
+/*
+ ______________    Work  Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.work-section-row {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.work-section-box {
+    width: 33%;
+    border: 1px solid rgba(0, 0, 0, 0.196);
+    padding: 50px 23px;
+    text-align: center !important;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.work-section-box:hover {
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.work-section-box h6 {
+    font-size: 37px;
+    font-weight: 100;
+}
+
+.work-section-box h5 {
+    font-size: 61px;
+    font-weight: 100;
+    color: var(--dark-purple);
+    padding: 9px 0;
+}
+
+.work-section-box i {
+    font-size: 27px;
+}
+
+.work-section-box h5 span {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.work-section-box p {
+    padding: 9px 0;
+}
+
+.work-section-btn {
+    padding-top: 30px;
+}
+
+
+/*
+ ______________   Our Advantages   ___________________________________________________________ >>>>>>
+
+*/
+
+.our-advantages {
+    background-image: url(../images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.our-advantages-content {
+    padding: 100px 0;
+}
+
+.our-advantages-content h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+}
+
+.our-advantages h1 br {
+    display: none;
+}
+
+.our-advantages-content h1::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9px;
+    background-color: var(--yelloy);
+    width: 120px;
+    height: 4px;
+}
+
+.our-advantages-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    color: white;
+    padding-top: 77px;
+}
+
+.our-advantages-row-box {
+    border-radius: 9px;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.our-advantages-row-box-img img {
+    width: 100%;
+    display: block;
+}
+
+.our-advantages-row-box-text {
+    padding: 30px 30px 0 40px;
+}
+
+.our-advantages-row-box-text h4 {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 23px;
+    padding-bottom: 14px;
+}
+
+.our-advantages-row-box-text p {
+    padding-bottom: 25px;
+}
+
+.our-advantages-btn {
+    padding-bottom: 40px;
+}
+
+
+/*
+ ______________   Team  Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.team-content {
+    padding: 45px 0 100px 0;
+}
+
+.team-row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding-top: 60px;
+}
+
+.team-box {
+    display: flex;
+    width: 100%;
+    box-shadow: 1px 1px 1pc 4px rgba(0, 0, 0, 0.105);
+    transition: 0.35s;
+}
+
+.team-box:hover {
+    box-shadow: 1px 1px 1pc 3px rgba(0, 0, 0, 0.263);
+}
+
+.team-box-text,
+.team-box-img {
+    width: 50%;
+}
+
+.team-box-text {
+    padding: 30px 40px 0 30px;
+}
+
+.team-box-text h3 {
+    font-size: 19px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 9px;
+}
+
+.team-box-text h6 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 100;
+    padding-bottom: 12px;
+}
+
+.team-box-text p {
+    padding-bottom: 20px;
+}
+
+.team-box-img img {
+    width: 100%;
+    display: block;
+}
+
+.team-box-star-row {
+    display: flex;
+    padding-bottom: 19px;
+}
+
+.team-box-star-row i {
+    color: rgb(255, 136, 0);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+/*
+ ______________   Team Info Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.team-info {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.team-info-row {
+    padding: 70px 0;
+    display: flex;
+    width: 100%;
+}
+
+.team-info-box {
+    width: 50%;
+    padding: 30px 50px;
+}
+
+.team-info-box:first-child {
+    border: 1px solid white;
+    text-align: center;
+}
+
+.team-info-box i {
+    font-size: 81px;
+    color: var(--yelloy);
+    padding: 16px 0 5px 0;
+}
+
+.team-info-box:first-child h4 {
+    font-size: 42px;
+    font-weight: 400;
+    padding: 25px 0 19px 0;
+}
+
+.team-info-box p {
+    color: white !important;
+}
+
+.team-info-btn {
+    margin: 30px 0 50px 0;
+}
+
+
+/* box 2  */
+
+.team-info-box:last-child h4 {
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 19px;
+}
+
+.team-info-box:last-child h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.team-info-box:last-child h6:not(:last-child) {
+    padding-bottom: 50px;
+}
+
+
+/*
+ ______________   Why We Work Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.why-we-work-row {
+    padding: 79px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.why-we-work-row-box:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.why-we-work-row-box h1 {
+    text-transform: capitalize;
+    color: black;
+    font-size: 41px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.why-we-work-box-para {
+    text-transform: capitalize;
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/*
+ ______________   Why We Work button Section   ___________________________________________________________ >>>>>>
+
+*/
+
+.why-we-work-button-section {
+    background-color: var(--gray);
+}
+
+.why-we-work-btn-row {
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.why-we-work-button-section_btn {
+    margin: 0 10px;
+}
+
+
+/*
+         ______________   Footer Section   ______________________________________________ >>>>>>
+
+*/
+
+
+/* contact Section     */
+
+.contact-row {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* box 1  */
+
+.contact-box {
+    padding: 0 15px;
+}
+
+.contact-box textarea::placeholder,
+.contact-box input::placeholder {
+    color: rgba(0, 0, 0, 0.653);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact-box input {
+    width: 100%;
+    min-width: 200px;
+    height: 50px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+}
+
+.contact-box textarea {
+    width: 100%;
+    min-width: 200px;
+    height: 130px;
+    min-height: 50px;
+    max-height: 300px;
+    padding: 19px 0 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.333);
+    resize: vertical;
+    display: block;
+    margin-bottom: 12px;
+}
+
+
+/* box2  */
+
+.contact-box h3 {
+    font-size: 19px;
+    font-weight: 400;
+    padding: 12px 0 21px 0;
+}
+
+.contact-box-mail-div {
+    padding-bottom: 30px;
+}
+
+.contact-box-mail-div h5 {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    padding: 4px 0;
+}
+
+.contact-box-mail-div2 h5 {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* box 3  */
+
+.contact-box ul li {
+    position: relative;
+    padding: 0 0 15px 10px;
+    font-weight: 100;
+}
+
+.contact-box ul li::before {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: -9px;
+    background-color: black;
+    width: 7px;
+    height: 7px;
+}
+
+
+/* box 4  */
+
+.contact-box-img img {
+    width: 100px;
+    padding-bottom: 25px;
+}
+
+.contact-box-img p {
+    padding-bottom: 41px;
+}
+
+.street-adress-div {
+    display: flex;
+    padding: 7px 0;
+    align-items: center;
+}
+
+.street-adress-div-icon {
+    width: 30px;
+}
+
+.street-adress-div-icon i {
+    font-size: 21px;
+}
+
+.street-adress-div h5 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+/*
+   ________  CopyRight Section   _______________________________________ >>>>>>
+
+*/
+
+.copy-right {
+    background-color: var(--gray);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.copy-right i {
+    font-size: 15px;
+}
+
+.copyright-span {
+    font-weight: 400;
+    padding-right: 7px;
+    font-size: 13px;
+}
+
+.year-span {
+    font-weight: 500;
+    padding: 0 7px;
+}
+
+.developer-span a {
+    padding: 0 12px;
+    font-family: 'Charmonman', cursive;
+    color: white;
+    position: relative;
+}
+
+.developer-span a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    background-color: var(--yelloy);
+    width: 0;
+    height: 1px;
+    transition: 0.5s;
+}
+
+.developer-span a:hover:after {
+    width: 100%;
+}
