@@ -1,0 +1,205 @@
+<style type="text/css">
+    .hk05-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background: #CCE0EB; */
+        padding: 5px 10px;
+        margin-bottom: 30px;
+    }
+    
+    .hk05-nav-links {
+        margin: 0;
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 160px);
+    }
+    
+    .hk05-nav-links a {
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #fff;
+        letter-spacing: 0;
+        font-size: 18px;
+    }
+    
+    .hk05-logo {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+    }
+    /* .hk05-logo img {
+        width: 30px;
+        height: auto;
+        margin-top: -10px;
+    } */
+    
+    .hk05-logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .hk05-menu {
+        list-style: none;
+        display: block;
+    }
+    
+    .hk05-menu li:hover a {
+        color: #DADADA;
+    }
+    
+    .hk05-menu li {
+        padding: 5px 14px;
+        display: inline-block;
+    }
+    
+    .hk05-services {
+        position: relative;
+    }
+    
+    .hk05-dropdown {
+        /* background-color: rgb(1, 139, 139); */
+        padding: 1em 0;
+        position: absolute;
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+    }
+    
+    .hk05-dropdown li+li {
+        margin-top: 10px;
+    }
+    
+    .hk05-dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+    }
+    
+    .hk05-dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+    
+    .hk05-services:hover .hk05-dropdown {
+        display: block;
+    }
+    
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    .hk05-hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+        cursor: pointer;
+        color: #fff;
+        /* Add this line to set the color to white */
+    }
+    
+    .hk05-top-button {
+        border-radius: 3px;
+        background-color: #0fd13d;
+        color: #fff;
+        /* box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 41%); */
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .hk05-top-button a {
+        color: #fff;
+        padding: 5px 14px;
+    }
+    
+    @media (max-width: 768px) {
+        .hk05-hamburger {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .hk05-nav-links {
+            width: 100%;
+            padding: 0;
+            display: inherit;
+        }
+        .hk05-menu li {
+            display: block;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        .hk05-menu {
+            display: none;
+            /*background: #cce0eb;*/
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 16px 0;
+        }
+        .hk05-menu li+li {
+            margin-top: 12px;
+        }
+        input[type=checkbox]:checked~.hk05-menu {
+            display: block;
+        }
+        .hk05-hamburger {
+            display: block;
+        }
+        .hk05-dropdown {
+            left: 50%;
+            top: 30px;
+            transform: translateX(35%);
+        }
+        .hk05-top-button a {
+            padding: 5px 0px;
+            font-size: 15px;
+        }
+        .hk05-dropdown li:hover {
+            background-color: #4c9e9e;
+        }
+        .hk05-navbar {
+            margin-bottom: 5px;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .hk05-logo img {
+            width: 25px;
+            margin-top: -5px;
+        }
+        /* .hk05-logo-text {
+            font-size: 24px;
+        } */
+    }
+</style>
+
+<div class="row">
+    <div class="hk05-logo-container">
+        <a href="#" class="hk05-logo"><img src="https://img.funnelish.com/19882/169946/1700757286-1652910095-us.png" style="width: 30px; margin-top: -10px;margin-right: 100px;"></a>
+        <a href="#" class="hk05-logo"><img src="https://img.funnelish.com/19882/169946/1700757281-1652908433-nuubu-logo-white.png" style="width: 150px;"></a>
+    </div>
+    <ul class="hk05-nav-links">
+        <input type="checkbox" id="hk05-checkbox_toggle">
+        <label for="hk05-checkbox_toggle" class="hk05-hamburger">☰</label>
+        <div class="hk05-menu">
+            <li><a href="#">HOW TO USE</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">TRACCK ORDER</a></li>
+            <li class="hk05-top-button"><a href="#">ORDER NOW!</a></li>
+        </div>
+    </ul>
+</div>
+
+<!-- Your existing HTML content -->
+
+<script>
+    document.getElementById('hk05-checkbox_toggle').addEventListener('change', function() {
+        var label = document.querySelector('.hk05-hamburger');
+        if (this.checked) {
+            label.textContent = '✕'; // Unicode for multiplication symbol (×)
+        } else {
+            label.textContent = '☰'; // Unicode for hamburger icon
+        }
+    });
+</script>

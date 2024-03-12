@@ -1,0 +1,14 @@
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}

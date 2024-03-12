@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+    <style>
+        .image-comparison {
+            max-width: 650px;
+            height: 600px;
+            margin: 0 auto;
+            border-radius: 315px;
+            overflow: hidden;
+        }
+        
+        .image-comparison__slider-wrapper {
+            position: relative;
+            max-width: 650px;
+            height: 600px;
+        }
+        
+        .image-comparison__range {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+            z-index: 20;
+        }
+        
+        .image-comparison__image-wrapper--overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(50% + 1px);
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .image-comparison__figure {
+            margin: 0;
+        }
+        
+        .image-comparison__figure::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+        }
+        
+        .image-comparison__figure:not(.image-comparison__figure--overlay) {
+            position: relative;
+        }
+        
+        .image-comparison__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 650px;
+            height: 600px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: 0 50%;
+            object-position: 0 50%;
+            overflow: hidden;
+        }
+        
+        .image-comparison__figure--overlay .image-comparison__image {
+            z-index: 1;
+        }
+        
+        .image-comparison__slider {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: calc(50% - 15px);
+            background-color: #236FA3;
+            transition: background-color 0.3s ease-in-out;
+            z-index: 10;
+            cursor: grabbing !important;
+        }
+        
+        .image-comparison__slider::after {
+            position: absolute;
+            top: calc(100% + 35px);
+            left: calc(50% - 3px);
+            width: 100%;
+            height: 100%;
+            background-color: #236FA3;
+            transition: background-color 0.3s ease-in-out;
+            z-index: 10;
+            content: '';
+            cursor: grabbing !important;
+        }
+        
+        .image-comparison__thumb {
+            position: absolute;
+            top: calc(100%);
+            left: calc(50% - 20px);
+            width: 30px;
+            height: 31px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: 5px solid #236FA3;
+            border-radius: 50%;
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            cursor: grabbing !important;
+        }
+        
+        .image-comparison__thumb-icon {
+            width: 24px;
+            color: #236FA3;
+            cursor: grabbing !important;
+        }
+        
+        .image-comparison__range::-webkit-slider-runnable-track {
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+        }
+        
+        .image-comparison__range::-moz-range-thumb {
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+        }
+        
+        .image-comparison__range::-webkit-slider-thumb {
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+        }
+        
+        .image-comparison__range::-ms-fill-lower {
+            background-color: transparent;
+        }
+        
+        .image-comparison__range::-ms-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            color: transparent;
+            outline: none;
+        }
+        
+        .image-comparison__range::-ms-thumb {
+            width: 0.5%;
+            height: 100%;
+            opacity: 100;
+        }
+        
+        .image-comparison__range::-ms-tooltip {
+            display: none;
+        }
+        
+        @media screen and (max-width:780px) {
+            .image-comparison__slider-wrapper,
+            .image-comparison__image,
+            .image-comparison {
+                max-width: 500px;
+                height: 450px;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            .image-comparison__slider-wrapper,
+            .image-comparison__image,
+            .image-comparison {
+                max-width: 400px;
+                height: 350px;
+            }
+            .image-comparison__slider,
+            .image-comparison__slider::after {
+                background-color: #ffffff;
+                width: 4px;
+            }
+            .image-comparison__thumb {
+                border: 4px solid #ffffff;
+            }
+            .image-comparison__thumb-icon {
+                color: #ffffff;
+                width: 20px;
+            }
+        }
+        
+        @media screen and (max-width:470px) {
+            .image-comparison__slider-wrapper,
+            .image-comparison__image,
+            .image-comparison {
+                max-width: 300px;
+                height: 250px;
+            }
+        }
+        
+        @media screen and (max-width:350px) {
+            .image-comparison__slider-wrapper,
+            .image-comparison__image,
+            .image-comparison {
+                max-width: 240px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="image-comparison" data-component="image-comparison-slider">
+        <div class="image-comparison__slider-wrapper">
+
+            <input type="range" min="0" max="100" value="50" class="image-comparison__range" id="image-compare-range" data-image-comparison-range="">
+
+            <div class="image-comparison__image-wrapper  
+                        image-comparison__image-wrapper--overlay" data-image-comparison-overlay="">
+                <figure class="image-comparison__figure image-comparison__figure--overlay">
+                    <picture class="image-comparison__picture">
+                        <img src="white-teeth-web-img.webp" class="image-comparison__image">
+                    </picture>
+                </figure>
+            </div>
+
+            <div class="image-comparison__slider" data-image-comparison-slider="">
+                <span class="image-comparison__thumb" data-image-comparison-thumb=""> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"  class="image-comparison__thumb-icon"><polygon points="0 50 37 68 37 32 0 50" fill="currentColor"></polygon><polygon points="100 50 64 32 64 68 100 50" fill="currentColor"></polygon></svg>
+                </span>
+            </div>
+
+            <div class="image-comparison__image-wrapper">
+                <figure class="image-comparison__figure">
+                    <picture class="image-comparison__picture">
+                        <img src="yellow-teeth-web-img.webp" class="image-comparison__image">
+                    </picture>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        window.console = window.console || function(t) {};
+        const imageComparisonSlider = document.querySelector('[data-component="image-comparison-slider"]');
+
+        function setSliderstate(e, element) {
+            const sliderRange = element.querySelector('[data-image-comparison-range]');
+            if (e.type === 'input') {
+                sliderRange.classList.add('image-comparison__range--active');
+                return;
+            }
+            sliderRange.classList.remove('image-comparison__range--active');
+            element.removeEventListener('mousemove', moveSliderThumb);
+        }
+
+        function moveSliderThumb(e) {
+            const sliderRange = document.querySelector('[data-image-comparison-range]');
+            const thumb = document.querySelector('[data-image-comparison-thumb]');
+        }
+
+        function moveSliderRange(e, element) {
+            const value = e.target.value;
+            const slider = element.querySelector('[data-image-comparison-slider]');
+            const imageWrapperOverlay = element.querySelector('[data-image-comparison-overlay]');
+            slider.style.left = `${value}%`;
+            imageWrapperOverlay.style.width = `${value}%`;
+            element.addEventListener('mousemove', moveSliderThumb);
+            setSliderstate(e, element);
+        }
+
+        function init(element) {
+            const sliderRange = element.querySelector('[data-image-comparison-range]');
+            if ('ontouchstart' in window === false) {
+                sliderRange.addEventListener('mouseup', e => setSliderstate(e, element));
+                sliderRange.addEventListener('mousedown', moveSliderThumb);
+            }
+            sliderRange.addEventListener('input', e => moveSliderRange(e, element));
+            sliderRange.addEventListener('change', e => moveSliderRange(e, element));
+        }
+        init(imageComparisonSlider);
+        //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="new.css"> -->
+    <!-- <link rel="stylesheet" href="resp.css"> -->
+    <style>
+        /* css 
+         */
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px;
+            flex-wrap: wrap;
+        }
+        /* logo 1  */
+        
+        .hk05-logo-container-1 a {
+            width: max-content;
+        }
+        
+        .hk05-logo-container-1 a img {
+            display: block;
+            width: 30px;
+        }
+        /* logo 2  */
+        
+        .hk05-logo-container-2 a {
+            width: max-content;
+        }
+        
+        .hk05-logo-container-2 a img {
+            width: 150px;
+            display: block;
+        }
+        /* navigation  */
+        
+        .hk05-nav-ul-wrap {
+            width: max-content;
+        }
+        /* icons  */
+        
+        .toggler_wrap {
+            display: none;
+        }
+        
+        #burger_icon,
+        #cross_icon {
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+        }
+        /* ul  */
+        
+        .hk05-nav-ul-wrap ul {
+            display: flex;
+            align-items: center;
+        }
+        
+        .hk05-nav-ul-wrap ul li {
+            list-style: none;
+        }
+        
+        .hk05-nav-ul-wrap ul li a {
+            text-decoration: none;
+            font-weight: 400;
+            /* line-height: 1.8em; */
+            color: #fff;
+            letter-spacing: 0;
+            font-size: 18px;
+            margin-left: 21px;
+        }
+        
+        .hk05-nav-ul-wrap ul li a:hover {
+            color: #DADADA;
+        }
+        
+        .hk05-top-button {
+            border-radius: 3px;
+            background-color: #0fd13d;
+            color: #fff;
+            /* box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 41%); */
+            padding: 10px 25px;
+            margin-left: 21px;
+        }
+        
+        .hk05-top-button a {
+            margin: 0 !important;
+        }
+        /* responsive 
+         */
+        /* for 991 px  */
+        
+        @media screen and (max-width:991px) {
+            .hk05-nav-ul-wrap ul li a {
+                font-size: 13px;
+                margin-left: 15px;
+            }
+        }
+        /* for 768 px  */
+        
+        @media screen and (max-width:768px) {
+            /* icons  */
+            #cross_icon {
+                font-size: 0px;
+            }
+            .toggler_wrap {
+                display: block;
+            }
+            /* ul  */
+            .hk05-nav-ul-wrap {
+                position: relative;
+            }
+            .ul_outter_script {
+                height: 295px !important;
+            }
+            .hk05-ul-outter {
+                height: 0px;
+                overflow: hidden;
+                z-index: 999;
+                width: calc(100vw - 30px);
+            }
+            .hk05-nav-ul-wrap ul {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+            .hk05-nav-ul-wrap ul li a {
+                line-height: 2.5em;
+            }
+            .hk05-top-button {
+                padding: 5px 35px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <div class="row">
+                    <div class="hk05-logo-container hk05-logo-container-1">
+                        <a href="#" class="hk05-logo"><img src="https://img.funnelish.com/19882/169946/1700757286-1652910095-us.png"></a>
+                    </div>
+
+                    <div class="hk05-logo-container hk05-logo-container-2">
+                        <a href="#" class="hk05-logo"><img src="https://img.funnelish.com/19882/169946/1700757281-1652908433-nuubu-logo-white.png"></a>
+                    </div>
+
+                    <div class="toggler_wrap">
+                        <i id="burger_icon" class="fa-solid fa-bars hk05-toggler-icon hk05-toggler-icon-bars" onclick="menu_show()"></i>
+                        <i id="cross_icon" class="fa-solid fa-xmark hk05-toggler-icon hk05-toggler-icon-cross" onclick="menu_show()"></i>
+                    </div>
+
+                    <div class="hk05-nav-ul-wrap">
+                        <div class="hk05-ul-outter" id="ul_outter">
+                            <ul id="hk05_nav_ul">
+                                <li><a href="#">HOW TO USE</a></li>
+                                <li><a href="#">REVIEWS</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="#">TRACCK ORDER</a></li>
+                                <li class="hk05-top-button"><a href="#">ORDER NOW!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Your existing HTML content -->
+
+    <script>
+        var menu_ul = document.getElementById('ul_outter');
+        var burger_icon = document.getElementById('burger_icon');
+        var cross_icon = document.getElementById('cross_icon');
+
+
+
+        function menu_show() {
+            // menu 
+            menu_ul.classList.toggle("ul_outter_script")
+        }
+    </script>
+</body>
+
+</html>

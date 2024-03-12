@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .custom-body {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            background-color: #000000;
+        }
+        .custom-container {
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+        }
+        .custom-li {
+            display: inline-block;
+            margin-right: 20px;
+            text-align: center;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .custom-li span {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="custom-body">
+
+<div class="custom-container">
+    <div id="custom-countdown">
+        <ul>
+            <li class="custom-li"><span id="custom-minutes">10</span><br><span style="font-size: 12px;">Mint</span></li>
+            <li class="custom-li"><span id="custom-seconds">00</span><br><span style="font-size: 12px;">Sec</span></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Set the end date to 10 minutes from the current time
+    const endDate = new Date().getTime() + 10 * 60 * 1000;
+
+    // Update the timer every second
+    const updateTimer = () => {
+        const currentTime = new Date().getTime();
+        const timeDifference = endDate - currentTime;
+
+        if (timeDifference > 0) {
+            const minutes = Math.floor(timeDifference / (60 * 1000));
+            const seconds = Math.floor((timeDifference % (60 * 1000)) / 1000);
+
+            // Format the output with double-digit values
+            const formattedMinutes = String(minutes).padStart(2, '0');
+            const formattedSeconds = String(seconds).padStart(2, '0');
+
+            // Update the content of the spans
+            document.getElementById("custom-minutes").innerText = formattedMinutes;
+            document.getElementById("custom-seconds").innerText = formattedSeconds;
+
+            setTimeout(updateTimer, 1000); // Update every 1 second
+        } else {
+            // Timer complete message or any other action you want
+            document.getElementById("custom-countdown").innerHTML = "<p>Timer complete!</p>";
+        }
+    };
+
+    // Initial call to start the timer
+    updateTimer();
+</script>
+
+</body>
+</html>

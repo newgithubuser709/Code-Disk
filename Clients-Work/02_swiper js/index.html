@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Slides</title>
+    <!-- swiper cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        /* <!-- css  --> */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .hk_reviews_swiper_main_container_637_slide_toggler_bar {
+            background-color: #e3fbf7;
+            width: 100%;
+            height: max-content;
+        }
+        
+        .hk_reviews_swiper_main_container_637_slide_toggler_bar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+            width: max-content;
+            padding: 7px 36px;
+            text-align: center;
+            list-style-type: none;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li br {
+            display: none;
+        }
+        
+        .hk-active-swiper-toggle-li-color {
+            background-color: white;
+        }
+        /* video  */
+        
+        .hk_reviews_swiper_main_container_637_video_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 18px 0;
+            max-width: 1170px;
+            margin: 0 auto;
+            gap: 10px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_video_grid_boxes {
+            width: auto;
+            max-height: 335px;
+            overflow: hidden;
+            border-radius: 9px;
+            border: none;
+        }
+        
+        .hk_reviews_swiper_main_container_637_video_grid_boxes video {
+            width: 100%;
+            height: 100%;
+        }
+        /* reviews text swiper  */
+        
+        .hk-sliding-area-for-reviews-text-235 {
+            max-width: 1170px;
+            margin: 0 auto;
+            display: none;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 70px;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: black;
+            width: 0px;
+            height: 0px;
+            padding: 3px;
+            margin: 0 16px !important;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_wrap {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes {
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+            margin: 0 5px;
+        }
+        
+        .hk_txt_bxs_str_i {
+            color: #ff9000;
+            font-size: 11px;
+            padding-bottom: 15px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_h3 {
+            font-size: 19px;
+            font-weight: 700;
+            text-transform: capitalize;
+            min-height: 46px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_para {
+            font-size: 17px;
+            text-transform: none;
+            line-height: 1.2;
+            padding-bottom: 18px;
+            max-width: 300px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_verify_text {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_verify_text span {
+            font-size: 15px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #1f5f96;
+        }
+        
+        .hk-637-txt-bx-vrfy-i {
+            padding: 0 10px 0 7px;
+            color: #34dc00;
+            font-size: 20px;
+        }
+        
+        .hk_reviews_swiper_main_container_637_texts_boxes_verify_text p {
+            font-size: 16px;
+        }
+        /* <!-- responsive css  --> */
+        
+        @media screen and (max-width:1120px) {
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                font-size: 18px;
+                font-weight: 900;
+            }
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li br {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                padding: 7px 6%;
+            }
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li br {
+                display: none;
+            }
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                font-weight: 600;
+            }
+            .hk_reviews_swiper_main_container_637_video_grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 25px;
+            }
+            .hk_reviews_swiper_main_container_637_video_grid_boxes {
+                max-height: none;
+            }
+            .hk_reviews_swiper_main_container_637_video_grid_boxes video {
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 333px) {
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                font-size: 12px;
+                padding: 7px 0px;
+            }
+            .hk_reviews_swiper_main_container_637_video_grid {
+                grid-template-columns: 1fr;
+                gap: 0
+            }
+            .hk_reviews_swiper_main_container_637_video_grid_boxes {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (max-width: 490px) {
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                padding: 7px 25px;
+                font-size: 14px;
+            }
+            .hk_reviews_swiper_main_container_637_video_grid {
+                gap: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 410px) {
+            .hk_reviews_swiper_main_container_637_slide_toggler_bar ul li {
+                font-size: 13px;
+                padding: 7px 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hk_reviews_swiper_main_container_637">
+        <!-- bar  -->
+        <div class="hk_reviews_swiper_main_container_637_slide_toggler_bar">
+            <ul>
+                <li class="hk-active-swiper-toggle-li hk-active-swiper-toggle-li-1 hk-active-swiper-toggle-li-color">Der Verkauf <br> endet bald</li>
+                <li class="hk-active-swiper-toggle-li hk-active-swiper-toggle-li-2">Bestseller <br> Nummer eins</li>
+            </ul>
+        </div>
+        <!-- video elem  -->
+        <div class="hk_reviews_swiper_main_container_637_video_container">
+            <div class="hk_reviews_swiper_main_container_637_video_grid">
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/22499e55dc1543aa8fd739e07617232c.mp4" controls=""></video>
+                </div>
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/6679bf3b79f140b797ffed50ad005060.mp4" controls=""></video>
+                </div>
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/19518cb77e834cf09a2bcd05974e0f76.mp4" controls=""></video>
+                </div>
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/edd04d9fed084c5394e56d6e500bcc34.mp4" controls=""></video>
+                </div>
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/b6b0ba5b73d24b46af574551bfadc0ad.mp4" controls=""></video>
+                </div>
+                <div class="hk_reviews_swiper_main_container_637_video_grid_boxes
+                hk_reviews_swiper_main_container_637_video_grid_boxe-1">
+                    <video src="https://cdn.shopify.com/videos/c/o/v/07c09ca3a5564dd79e0f15257949f4f9.mp4" controls=""></video>
+                </div>
+            </div>
+        </div>
+        <!-- reviews text swiper  -->
+        <div class="hk-sliding-area-for-reviews-text-235">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="hk_reviews_swiper_main_container_637_texts_boxes_wrap">
+                            <div class="hk_reviews_swiper_main_container_637_texts_boxes">
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_star_icons">
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                </div>
+                                <h3 class="hk_reviews_swiper_main_container_637_texts_boxes_h3">srate underes ruhig</h3>
+                                <p class="hk_reviews_swiper_main_container_637_texts_boxes_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus obcaecati voluptate, praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                    praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                </p>
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_verify_text">
+                                    <span>moritz |</span>
+                                    <i class="fa-solid fa-circle-check hk-637-txt-bx-vrfy-i"></i>
+                                    <p>verifiziter couf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="hk_reviews_swiper_main_container_637_texts_boxes_wrap">
+                            <div class="hk_reviews_swiper_main_container_637_texts_boxes">
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_star_icons">
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                </div>
+                                <h3 class="hk_reviews_swiper_main_container_637_texts_boxes_h3">srate sougKraft underespectovell ruhig</h3>
+                                <p class="hk_reviews_swiper_main_container_637_texts_boxes_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus obcaecati voluptate, praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                    praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                </p>
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_verify_text">
+                                    <span>moritz |</span>
+                                    <i class="fa-solid fa-circle-check hk-637-txt-bx-vrfy-i"></i>
+                                    <p>verifiziter couf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="hk_reviews_swiper_main_container_637_texts_boxes_wrap">
+                            <div class="hk_reviews_swiper_main_container_637_texts_boxes">
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_star_icons">
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                </div>
+                                <h3 class="hk_reviews_swiper_main_container_637_texts_boxes_h3">srate sougKraft underespectovell ruhig</h3>
+                                <p class="hk_reviews_swiper_main_container_637_texts_boxes_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus obcaecati voluptate, praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                    praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                </p>
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_verify_text">
+                                    <span>moritz |</span>
+                                    <i class="fa-solid fa-circle-check hk-637-txt-bx-vrfy-i"></i>
+                                    <p>verifiziter couf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4  -->
+                    <div class="swiper-slide">
+                        <div class="hk_reviews_swiper_main_container_637_texts_boxes_wrap">
+                            <div class="hk_reviews_swiper_main_container_637_texts_boxes">
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_star_icons">
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                </div>
+                                <h3 class="hk_reviews_swiper_main_container_637_texts_boxes_h3">srate sougKraft underespectovell ruhig</h3>
+                                <p class="hk_reviews_swiper_main_container_637_texts_boxes_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus obcaecati voluptate, praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                    praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                </p>
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_verify_text">
+                                    <span>moritz |</span>
+                                    <i class="fa-solid fa-circle-check hk-637-txt-bx-vrfy-i"></i>
+                                    <p>verifiziter couf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="hk_reviews_swiper_main_container_637_texts_boxes_wrap">
+                            <div class="hk_reviews_swiper_main_container_637_texts_boxes">
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_star_icons">
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                    <i class="fa-solid fa-star hk_txt_bxs_str_i"></i>
+                                </div>
+                                <h3 class="hk_reviews_swiper_main_container_637_texts_boxes_h3">srate sougKraft underespectovell ruhig</h3>
+                                <p class="hk_reviews_swiper_main_container_637_texts_boxes_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, temporibus obcaecati voluptate, praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                    praesentium minus autem, saepe quia voluptates omnis ullam repellat doloremque non. Cupiditate a, earum sequi quod possimus enim!
+                                </p>
+                                <div class="hk_reviews_swiper_main_container_637_texts_boxes_verify_text">
+                                    <span>moritz |</span>
+                                    <i class="fa-solid fa-circle-check hk-637-txt-bx-vrfy-i"></i>
+                                    <p>verifiziter couf</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiper cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- font awesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- script js  -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            speed: 3000,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                // when window width is >= 10px
+                10: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                },
+
+                // when window width is >= 600px
+                600: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            }
+
+            // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+        });
+
+
+
+
+        $(".hk-active-swiper-toggle-li").click(function() {
+
+            $(".hk-active-swiper-toggle-li").removeClass("hk-active-swiper-toggle-li-color")
+            $(this).addClass("hk-active-swiper-toggle-li-color")
+
+        });
+
+
+        $(".hk-active-swiper-toggle-li-1").click(function() {
+
+            $(".hk_reviews_swiper_main_container_637_video_container").css({
+
+                "display": "block",
+            });
+
+            $(".hk-sliding-area-for-reviews-text-235").css({
+
+                "display": "none",
+            });
+        });
+
+
+        // 2 
+        $(".hk-active-swiper-toggle-li-2").click(function() {
+
+            $(".hk_reviews_swiper_main_container_637_video_container").css({
+
+                "display": "none",
+            });
+
+            $(".hk-sliding-area-for-reviews-text-235").css({
+
+                "display": "block",
+            });
+        });
+    </script>
+</body>
+
+</html>

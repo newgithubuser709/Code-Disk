@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="hkc01_container_imgWrap_tx">
+        <div class="hkc01_videoBox">
+            <video id="hkc01_video" controls src="https://videos.gotolstoy.com/public/87b83b24-7bac-4462-b5e8-7bd66284276a/53e92e65-f671-4ef0-abd2-7bd5c2fa437b/53e92e65-f671-4ef0-abd2-7bd5c2fa437b_640.mp4#t=0.01">  </video>
+            <div class="hkc01_play-btn_videoBox">
+                <i class="fa-solid fa-play hkc01_play-btn_videoBox-i-play" id="hkc01_play_i"></i>
+                <i class="fa-solid fa-pause hkc01_play-btn_videoBox-i-pause" id="hkc01_pause_i"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- font awesome cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <script>
+        const videoElement = $("#hkc01_video")[0];
+
+        $("#hkc01_pause_i").css({
+            display: "none"
+        });
+        // Add click event to the button using jQuery
+        $("#hkc01_video").on('click', function() {
+
+            // Check if the video is paused
+            if (videoElement.paused) {
+                // If paused, play the video
+
+                // Hide the image when the video is playing
+                $("#hkc01_pause_i").css({
+                    display: "block"
+                });
+                // 1 
+                $("#hkc01_play_i").css({
+                    display: "none"
+                })
+                $("#hkc01_video").play()
+            } else {
+                // If playing, pause the video
+
+                // 3 
+                $("#hkc01_pause_i").css({
+                    display: "none"
+                });
+                // 1 
+                $("#hkc01_play_i").css({
+                    display: "block"
+                })
+                $("#hkc01_video").pause()
+            }
+        });
+
+
+        $(".hkc01_play-btn_videoBox").addClass("hide-toggle-icon");
+
+        $("#hkc01_video").on('mousemove', function() {
+            $(".hkc01_play-btn_videoBox").removeClass("hide-toggle-icon");
+        })
+        $("#hkc01_video").on('mouseout', function() {
+            $(".hkc01_play-btn_videoBox").addClass("hide-toggle-icon");
+        })
+
+        videoElement.css({
+            display: "none"
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@media screen and (max-width:991px) {
+    .col-md-2 {
+        display: none;
+    }
+    .showing_p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .col-md-3 {
+        width: max-content!important;
+        padding-left: 0;
+    }
+}
