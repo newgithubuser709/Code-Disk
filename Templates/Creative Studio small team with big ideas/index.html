@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio | Small Team With Big Ideas</title>
+    <!-- fav icon  -->
+    <link rel="icon" type="image/x-icon" href="fav-icon/favicon.png">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AoS LIBRARY JS  ___animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- style Sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive sheet  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body onload="load()">
+
+    <div id="preloader">
+        <div class="pre-anim">
+            <img src="pre-loader/gif-unscreen.gif" alt="">
+        </div>
+    </div>
+
+    <header>
+        <div class="hdr-overlay">
+            <div class="header">
+                <nav id="nav">
+                    <div class="logo" id="logo" data-aos="fade-right">
+                        <a href="#"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="toogle-icon" data-aos="fade-left">
+                        <i id="burger" class="fa-solid fa-bars-staggered burger" style="color: #ff015a;" onclick="toggle1()"></i>
+                        <i id="cross" class="fa-sharp fa-solid fa-xmark cross" style="color: #ea0046;" onclick="toggle2()"></i>
+                    </div>
+                    <ul id="nav-ul" data-aos="fade-left">
+                        <li><a onclick='toggle12close()' href="#">home</a></li>
+                        <li><a onclick='toggle12close()' href="#about">about</a></li>
+                        <li><a onclick='toggle12close()' href="#service">service</a></li>
+                        <li><a onclick='toggle12close()' href="#portfolio">portfolio</a></li>
+                        <li><a onclick='toggle12close()' href="#team">team</a></li>
+                        <li><a onclick='toggle12close()' href="#testimonial">testimonials</a></li>
+                        <li><a onclick='toggle12close()' href="#blog">blog</a></li>
+                        <li><a onclick='toggle12close()' href="#contact">contact</a></li>
+                        <li><a onclick='toggle12close()' href="#" class="nav-btn">components</a></li>
+                    </ul>
+                </nav>
+
+                <div class="container">
+                    <!-- hero section start -->
+                    <div class="hero">
+                        <div class="hero-row" data-aos="zoom-out">
+                            <h1>
+                                small team with big ideas
+                            </h1>
+                            <h2>
+                                creative studio
+                            </h2>
+                        </div>
+                        <div class="hero-row hero-row2">
+                            <a href="#service" class="hero-btn1">our service</a>
+                            <a href="#contact" class="hero-btn2">contact us</a>
+                        </div>
+                    </div>
+                    <!-- hero section end -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- about section start  -->
+
+    <div class="about">
+        <div class="container">
+            <!-- about first section  -->
+            <div class="about-first-section">
+                <div class="about-first-section-row">
+                    <div class="about-first-section-box">
+                        <i class="fa-brands fa-uikit"></i>
+                        <h4>
+                            UX/UI Design
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit Nobis porro autem eaque qui Quaerat cupiditate
+                        </p>
+                    </div>
+                    <div class="about-first-section-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>
+                            Web Development
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit Nobis porro autem eaque qui Quaerat cupiditate
+                        </p>
+                    </div>
+                    <div class="about-first-section-box">
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <h4>
+                            App Design
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit Nobis porro autem eaque qui Quaerat cupiditate
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- about second section  -->
+            <div class="about-second-section" id="about" style="overflow-x: hidden;">
+                <div class="about-second-section-row" data-aos="fade-left">
+                    <div class="about-second-section-box about-second-section-box1">
+                        <img src="images/about.jpg" alt="loding...">
+                    </div>
+                    <div class="about-second-section-box  about-second-section-box2">
+                        <h4>
+                            We Create
+                        </h4>
+                        <h2>
+                            Awesome Work
+                        </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente cupiditate quas, amet harum perferendis minus, cum dolorum obcaecati iste aspernatur voluptatum aut.</p>
+                        <p>Cum laudantium unde nemo doloribus eligendi quodarum ea vitae dicta. Accusantium vero, ea? Alias, atque libero. Id, ut harum.</p>
+                        <p> consectetur adipisicing elit. Omnis quidem, quos iure a dolorum illum culpa quia nemo soluta, ratione harum beatae minus doloribus consectetur! Similique tempora sunt doloribus molestias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about third section  -->
+        <div class="about-third-section">
+            <div class="overlay">
+                <div class="container">
+                    <div class="about-third-section-content">
+                        <h3 data-aos="zoom-in">
+                            We See
+                        </h3>
+                        <h2 data-aos="zoom-in">
+                            What Other Don't See.
+                        </h2>
+                        <div class="about-third-section-row">
+                            <div class="about-third-section-box about-third-section-box1" data-aos="fade-up">
+                                <div class="about-third-section-box-after">
+                                    <i class="fa-solid fa-clipboard-list"></i>
+                                    <h2>
+                                        Planning
+                                    </h2>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <div class="about-third-section-box about-third-section-box2" data-aos="fade-down">
+                                <div class="about-third-section-box-after">
+                                    <i class="fa-solid fa-box"></i>
+                                    <h2>
+                                        Mockup
+                                    </h2>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <div class="about-third-section-box about-third-section-box3" data-aos="fade-up">
+                                <div class="about-third-section-box-after">
+                                    <i class="fa-brands fa-asymmetrik"></i>
+                                    <h2>
+                                        Develope
+                                    </h2>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-angle-right fa-angle-right-third"></i>
+                            <div class="about-third-section-box about-third-section-box4" data-aos="fade-down">
+                                <div class="about-third-section-box-after">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    <h2>
+                                        Provide
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- servece section start  -->
+
+    <div class="services" id="service">
+        <div class="container">
+            <div class="services-content all-sec-headings">
+                <h3 data-aos="zoom-in">
+                    Makes Happen
+                </h3>
+                <h2 data-aos="zoom-in">
+                    Our Service
+                </h2>
+                <div class="services-content-row">
+                    <div class="service-content-col">
+                        <div class="service-colom-box" data-aos="fade-up">
+                            <i class="fa-solid fa-filter"></i>
+                            <h5>
+                                corporis assumenda
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                        <div class="service-colom-box" data-aos="fade-down">
+                            <i class="fa-solid fa-paint-roller"></i>
+                            <h5>
+                                Debitis amet
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-content-col">
+                        <div class="service-colom-box" data-aos="fade-up">
+                            <i class="fa-brands fa-stumbleupon-circle"></i>
+                            <h5>
+                                Libero temporibus
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                        <div class="service-colom-box" data-aos="fade-down">
+                            <i class="fa-regular fa-clone"></i>
+                            <h5>
+                                Perspiciatis explicabo
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-content-col">
+                        <div class="service-colom-box" data-aos="fade-up">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h5>
+                                Poluptatum
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                        <div class="service-colom-box">
+                            <i class="fa-solid fa-palette" data-aos="fade-down"></i>
+                            <h5>
+                                Nihil dicta
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-content-col">
+                        <div class="service-colom-box" data-aos="fade-up">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                            <h5>
+                                Repellendus maxime
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                        <div class="service-colom-box" data-aos="fade-down">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <h5>
+                                Sint vitae
+                            </h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet saepe et!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio section start  -->
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="all-sec-headings" data-aos="zoom-in">
+                <h3>
+                    Our Awesome Works
+                </h3>
+                <h2>
+                    Our Portfolio
+                </h2>
+            </div>
+            <div class="portfolio-row" style="overflow-x: hidden;">
+                <div class="portfolio-colom" data-aos="fade-right">
+                    <div class="portfolio-box">
+                        <img src="images/folio-1.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/folio-2.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-colom" data-aos="fade-up">
+                    <div class="portfolio-box">
+                        <img src="images/folio-3.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/folio-4.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-colom" data-aos="fade-left">
+                    <div class="portfolio-box">
+                        <img src="images/folio-5.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/folio-6.jpg" alt="">
+                        <div class="portfolio-box-hover">
+                            <h2>
+                                project title
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- team section -->
+    <!-- team first section -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="all-sec-headings" data-aos="zoom-in">
+                <h3>
+                    Meet With
+                </h3>
+                <h2>
+                    Our Angels
+                </h2>
+            </div>
+
+            <div class="team-row" style="overflow : hidden;">
+                <div class="team-colom" data-aos="fade-right">
+                    <div class="team-box">
+                        <img src="images/avatar.jpg" alt="">
+                        <h4>
+                            FOUNDER
+                        </h4>
+                        <h2>
+                            Matthew Davis
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-box">
+                        <img src="images/avatar-1.jpg" alt="">
+                        <h4>
+                            CEO
+                        </h4>
+                        <h2>
+                            Barbara Ross
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-colom" data-aos="fade-up">
+                    <div class="team-box">
+                        <img src="images/avatar-2.jpg" alt="">
+                        <h4>
+                            Designer
+                        </h4>
+                        <h2>
+                            Karen Perry
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-box">
+                        <img src="images/avatar-3.jpg" alt="">
+                        <h4>
+                            App Designer
+                        </h4>
+                        <h2>
+                            Ashley Diaz
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-colom" data-aos="fade-left">
+                    <div class="team-box">
+                        <img src="images/avatar-4.jpg" alt="">
+                        <h4>
+                            Developer
+                        </h4>
+                        <h2>
+                            Edward Harris
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-box">
+                        <img src="images/avatar-5.jpg" alt="">
+                        <h4>
+                            photographer
+                        </h4>
+                        <h2>
+                            Brian Scott
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quos esse tenetur illo qui, nostrum.
+                        </p>
+                        <div class="team-box-icon">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-github-alt"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team second section -->
+    <div class="team-second-section">
+        <div class="over-lay">
+            <div class="container" style="overflow: hidden;">
+                <div class="all-sec-headings" data-aos="zoom-in">
+                    <h3>
+                        We Are Awesome
+                    </h3>
+                    <h2>
+                        Some Fun Fucts
+                    </h2>
+                </div>
+                <div class="team-second-section-row">
+                    <div class="team-second-section-box" data-aos="fade-up">
+                        <i class="fa-solid fa-trophy"></i>
+                        <h2>
+                            100+<br><span>Awards Won</span>
+                        </h2>
+                    </div>
+                    <div class="team-second-section-box" data-aos="fade-down">
+                        <i class="fa-regular fa-face-smile-wink"></i>
+                        <h2>
+                            100+<br> <span>Happy Clients</span>
+                        </h2>
+                    </div>
+                    <div class="team-second-section-box" data-aos="fade-up">
+                        <i class="fa-solid fa-tv"></i>
+                        <h2>
+                            845+<br> <span>Project Completed </span>
+                        </h2>
+                    </div>
+                    <div class="team-second-section-box" data-aos="fade-down">
+                        <i class="fa-regular fa-comment"></i>
+                        <h2>
+                            15K+<br> <span>Comments</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial section start  -->
+    <!-- testimonial first section  -->
+    <div class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="all-sec-headings" data-aos="zoom-in">
+                <h3>
+                    Testimonial
+                </h3>
+                <h2>
+                    What Our Clients Says
+                </h2>
+            </div>
+            <div class="testimonial-row">
+                <div class="test-col">
+                    <div class="testimonial-box">
+                        <div class="test-img">
+                            <img src="images/avatar-3.jpg" class="test-img-img" alt="">
+                        </div>
+                        <div class="test-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta quidem aperiam neque nemo error reprehenderit eveniet maxime similique dolorem dolor, cum, minus voluptate beatae earum doloribus fuga molestiae pariatur.
+                            </p>
+                            <h3>
+                                john francis
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="test-col">
+                    <div class="testimonial-box">
+                        <div class="test-img">
+                            <img src="images/avatar-3.jpg" class="test-img-img" alt="">
+                        </div>
+                        <div class="test-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam soluta quidem aperiam neque nemo error reprehenderit eveniet maxime similique dolorem dolor, cum, minus voluptate beatae earum doloribus fuga molestiae pariatur.
+                            </p>
+                            <h3>
+                                john francis
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonial second section  -->
+
+    <div class="see-our-intro-video">
+        <div class="over-lay">
+            <div class="container">
+                <div class="see-our-intro-video-content" data-aos="zoom-in">
+                    <div class="see-our-intro-video-content-icon">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <h2>
+                        See Our Intro Video
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our blog section  -->
+
+    <div class="our-blog" id="blog">
+        <div class="container">
+            <div class="all-sec-headings" data-aos="zoom-in">
+                <h3>
+                    News Feeds
+                </h3>
+                <h2>
+                    Our Blog
+                </h2>
+            </div>
+            <div class="our-blog-row" style="overflow: hidden;">
+                <div class="our-blog-box" data-aos="fade-right">
+                    <img src="images/blog-1.jpg" alt="">
+                    <div class="our-blog-box-icons">
+                        <i class="fa-regular fa-message"><span>123</span></i>
+                        <i class="fa-regular fa-eye"><span>353</span></i>
+                    </div>
+                    <h3>
+                        Possimus aliquam veniam
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!
+                    </p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="our-blog-box" data-aos="fade-up">
+                    <img src="images/blog-2.jpg" alt="">
+                    <div class="our-blog-box-icons">
+                        <i class="fa-regular fa-message"><span>123</span></i>
+                        <i class="fa-regular fa-eye"><span>353</span></i>
+                    </div>
+                    <h3>
+                        Repudiandae laudantium
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!
+                    </p>
+                    <a href="#">read more</a>
+                </div>
+                <div class="our-blog-box" data-aos="fade-left">
+                    <img src="images/blog-3.jpg" alt="">
+                    <div class="our-blog-box-icons">
+                        <i class="fa-regular fa-message"><span>123</span></i>
+                        <i class="fa-regular fa-eye"><span>353</span></i>
+                    </div>
+                    <h3>
+                        Laboriosam asperiores
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae laudantium dolor nisi obcaecati, non laboriosam asperiores doloremque tempora repellendus iure!
+                    </p>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="for-scroll-to-contact-div"> </div>
+
+    <!-- contact section  -->
+
+    <div class="contact">
+        <div class="container" id="contact">
+            <div class="contact-small-container">
+                <div class="contact-content">
+                    <div class="contact-row">
+                        <div class="contact-box contact-box1" data-aos="fade-up">
+                            <div class="all-sec-headings">
+                                <h3>
+                                    Get Here
+                                </h3>
+                                <h2>
+                                    Contact Us
+                                </h2>
+                            </div>
+                            <div class="contact-box-child">
+                                <div class="contact-box-child-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="contact-box-child-text">
+                                    <h3>
+
+                                        Location
+                                    </h3>
+                                    <p>
+                                        Link Muslim Street, Lahore Pk
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-box-child">
+                                <div class="contact-box-child-icon">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                </div>
+                                <div class="contact-box-child-text">
+                                    <h3>
+
+                                        Phone Number
+                                    </h3>
+                                    <p>
+                                        +923414077978
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-box-child">
+                                <div class="contact-box-child-icon">
+                                    <i class="fa-solid fa-envelope-open-text"></i>
+                                </div>
+                                <div class="contact-box-child-text">
+                                    <h3>
+                                        Email Address
+                                    </h3>
+                                    <p>
+                                        haseebarshad821@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-box-child">
+                                <div class="contact-box-child-icon">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div class="contact-box-child-text">
+                                    <h3>
+                                        G-mail.com
+                                    </h3>
+                                    <p>
+                                        haseebarshad821@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-box contact-box2" data-aos="fade-down">
+                            <div class="all-sec-headings">
+                                <h3>
+                                    Available 24/7
+                                </h3>
+                                <h2>
+                                    Get In Touch
+                                </h2>
+                            </div>
+                            <div>
+                                <form class="contact-box2-form">
+                                    <input type="email" placeholder="enter email">
+                                    <input type="password" placeholder="password">
+                                    <textarea placeholder="message"></textarea>
+                                    <button type="submit">send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <footer class="footer">
+        <div class="over-lay">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-box">
+                        <div class="footer-small-box">
+                            <div class="footer-small-box-heading">
+                                <h3>
+                                    ABOUT US
+                                </h3>
+                            </div>
+                            <div class="web-name">
+                                <a href="#"><img src="images/logo.png" alt=""></a>
+                                <h3>creative studio</h3>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti minus optio accusamus, quam maiores explicabo sunt.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-box ">
+                        <div class="footer-small-box">
+                            <div class="footer-small-box-heading">
+                                <h3>
+                                    USEFUL LINKS
+                                </h3>
+                            </div>
+                            <div class="ul-footer">
+                                <ul class="USEFULLINKS-ul-1">
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">service</a></li>
+                                    <li><a href="#">portfolio</a></li>
+                                    <li><a href="#">testimonial</a></li>
+                                </ul>
+                                <ul class="USEFULLINKS-ul-1">
+                                    <li><a href="#">team</a></li>
+                                    <li><a href="#">blog</a></li>
+                                    <li><a href="#">faq</a></li>
+                                    <li><a href="#">privasy policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-box footer-box3">
+                        <div class="footer-small-box">
+                            <div class="footer-small-box-heading">
+                                <h3>
+                                    CONTACT INFO
+                                </h3>
+                            </div>
+                            <div class="CONTACT-INFO-text">
+                                <p>
+                                    Contact us and we'll get back to you within 24 hours.
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-location-dot"></i> Link Muslim Street, Lahore Pk
+                                </p>
+                                <p>
+                                    <i class="fa-solid fa-envelope-open-text"></i> haseebarshad821@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>
+                        Copyright 2023 <span><a href="tel:+923414077978">© Tx_Haseeb_@</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- for check pre loader  -->
+    <div style="display: none;">
+        <iframe src="https://www.youtube.com/embed/xvA9avOopyk"></iframe>
+        <iframe src="https://www.youtube.com/embed/xvA9avOopyk"></iframe>
+    </div>
+    <!-- _____________________________________________________________________________________________  -->
+
+    <!-- aos lib js  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 100, // offset (in px) from the original trigger point
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <!-- _____________________________________________________________________________________________  -->
+
+    <!--my js linked  -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
