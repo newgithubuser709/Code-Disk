@@ -1,0 +1,1102 @@
+/*        --Mobile Friendly...
+*/
+
+
+/*________ Breakpoint For min 1170 px __________________________________ */
+
+@media screen and (min-width:1170px) {
+    .about-grid-box1 h1,
+    .about-grid-box6 h1,
+    .team-heading-sect-box2 h1 {
+        font-size: 140px !important;
+    }
+}
+
+
+/*________ Breakpoint For 991 px __________________________________ */
+
+@media screen and (max-width:991px) {
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    .logo {
+        width: 150px;
+        margin: 15px 20px;
+    }
+    .portrait-navigations ul li {
+        margin: 29px 40px 0 0;
+    }
+    /* ________ hero  ____________________________ */
+    .hero-content {
+        padding: 140px 0 0 70px;
+    }
+    /* ________ chroma  ____________________________ */
+    /* ________ helvetica  ____________________________ */
+    /* ________ about  ____________________________ */
+    /* ________ team  ____________________________ */
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    .service-heading-content-inner {
+        padding-bottom: 40px;
+    }
+    .service-heading-content h1 {
+        font-size: 70px;
+    }
+    .service-heading-content {
+        padding: 300px 70px 0 0;
+    }
+    .service-content-box {
+        padding: 0;
+    }
+    .service-content-box h3 {
+        padding: 12px 30px;
+    }
+    .service-content-box-innerborder-box-detailText-section {
+        margin-right: 100px;
+    }
+    /* ________ service second  ____________________________ */
+    .service-second-content-img img {
+        height: 600px;
+    }
+    .service-second-content-box-number-list p {
+        transform: translateX(15px);
+        font-size: 60px;
+        padding-left: 25px;
+    }
+    .service-second-content-box-number-list-text {
+        padding: 10px 0 10px 100px;
+    }
+    .service-second-content-box-number-list-text h4 {
+        font-size: 20px;
+    }
+    /* ________ portfolio  ____________________________ */
+    /* ________ feedback  ____________________________ */
+    .feedback-grid-box4-inner-img {
+        background-image: url(../images/home-img1.png);
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 100%;
+    }
+    .feedback-grid-box6-inner-img {
+        max-width: 90%;
+    }
+    .feedback-grid-box7 {
+        flex-direction: column-reverse;
+    }
+    .feedback-grid-box7 p {
+        text-align: center;
+        padding: 30px 0;
+        margin: auto;
+    }
+    .feedback-grid-box7-inner {
+        padding-left: 0;
+    }
+    .feedback-grid-box8-inner {
+        padding: 20px 15px;
+    }
+    .feedback-grid-box8-inner p {
+        font-size: 10px;
+    }
+    .feedback-grid-box8-inner img {
+        width: 40px;
+        height: 40px;
+    }
+    /* ________ contact  ____________________________ */
+    .contact-heading h1 {
+        font-size: 61px;
+        font-weight: 800;
+        padding: 110px 0 50px 0;
+    }
+    .contact-row-box-2 {
+        padding: 18px 70px 40px 15px;
+    }
+    .contact-row-box-2-content p {
+        font-size: 20px;
+    }
+    /* ________ main footer  ____________________________ */
+    .contact-mainFooter h1 {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .contact-mainFooter p {
+        font-size: 10px;
+        padding: 15px;
+    }
+    .contact-mainFooter p a {
+        color: #c01717;
+        padding: 0 5px;
+    }
+    .contact-mainFooter p a:hover {
+        color: rgb(5, 29, 169);
+    }
+}
+
+
+/*________ Breakpoint For 880 px __________________________________ */
+
+@media screen and (max-width:880px) {
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    .logo {
+        width: 120px;
+        margin: 15px 10px;
+    }
+    .portrait-navigations ul {
+        padding-right: 20px;
+    }
+    .portrait-navigations ul li {
+        margin: 25px 35px 0 0;
+    }
+    .portrait-navigations ul li a {
+        font-size: 10px;
+    }
+    /* ________ hero  ____________________________ */
+    .hero-content {
+        padding: 140px 0 0 50px;
+    }
+    .hero-content h3 {
+        font-size: 20px;
+    }
+    .hero-content h3::first-letter {
+        font-size: 40px;
+    }
+    .hero-content p {
+        padding: 10px 0 30px 0;
+    }
+    .hero-content-btn a {
+        width: 140px;
+        height: 40px;
+        font-size: 10px;
+    }
+    /* ________ chroma  ____________________________ */
+    .chroma-navigation ul {
+        justify-content: end;
+    }
+    .chroma-navigation ul li a {
+        margin-left: 21px;
+    }
+    .chroma-icons {
+        font-size: 12px;
+    }
+    .chroma-navigation ul li p {
+        font-size: 11px;
+    }
+    /* ________ helvetica  ____________________________ */
+    .helvetica-col-1-content img {
+        width: 250px;
+    }
+    .helvetiva-heading h1 {
+        font-size: 80px;
+        font-weight: 700;
+    }
+    .helvetiva-text p {
+        font-size: 10px !important;
+    }
+    /* col 2  */
+    .helvetica-col-2 {
+        padding-top: 45px;
+        width: 210px;
+    }
+    .helvetica-col-2-para-1 {
+        font-size: 10px !important;
+    }
+    .helvetica-col-2-para-2 {
+        font-size: 10px !important;
+    }
+    /* ________ about  ____________________________ */
+    .about-grid-box1 {
+        min-width: 250px;
+    }
+    .about-grid-box1 h1 {
+        font-size: 80px !important;
+        transform: translateX(90px);
+        height: 80px;
+    }
+    .about-grid-box3 p,
+    .about-grid-box4 p {
+        font-size: 13px;
+    }
+    .about-grid-box5 {
+        min-width: 250px;
+    }
+    .about-grid-box5 p {
+        font-size: 12px;
+        padding: 0 30px;
+    }
+    .about-grid-box6 {
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+    .about-grid-box6 h1 {
+        font-size: 90px !important;
+        height: 90px;
+    }
+    /* ________ team  ____________________________ */
+    .team-heading-sect-box1 {
+        min-width: 250px;
+    }
+    .team-heading-sect-box2 {
+        min-width: 250px;
+    }
+    .team-heading-sect-box2 h1 {
+        font-size: 70px !important;
+        height: 100px;
+    }
+    .team-heading-sect-box5 h3 {
+        padding-bottom: 90px;
+        font-size: 13px;
+    }
+    .team-heading-sect-box5 p {
+        font-size: 12px;
+        padding-bottom: 90px;
+    }
+    .team-heading-sect-box6 a {
+        font-size: 40px;
+    }
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    .service-heading-content {
+        padding: 300px 0 0 0;
+    }
+    .service-heading-content-inner {
+        width: 330px;
+        text-align: left;
+    }
+    .service-heading-content h1 {
+        font-size: 60px;
+        width: max-content;
+        transform: translateX(-15px);
+    }
+    .service-content-box-innerborder-box-h3 h3 {
+        font-size: 17px;
+    }
+    .service-content-box-innerborder-box-detailText-section {
+        margin-right: 30px;
+    }
+    .service-content-box-innerborder-box-detailText-section .para {
+        font-size: 9px !important;
+    }
+    .service-dollar-detail p {
+        font-size: 12px;
+    }
+    /* box 4  */
+    .service-content-box4 h3 {
+        padding: 70px 150px 0 0;
+    }
+    /* ________ service second  ____________________________ */
+    .service-second-content-img img {
+        height: 470px;
+    }
+    .service-second-content-box-number-list-text {
+        padding: 10px 0 10px 50px;
+    }
+    .service-second-content-box-number-list-text h4 {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+    /* ________ portfolio  ____________________________ */
+    .portfolio-book-absloute-img {
+        width: 90px !important;
+        height: 130px;
+    }
+    /* ________ feedback  ____________________________ */
+    .feedback-grid-box1-text {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .feedback-grid-box1 h1 {
+        font-size: 45px;
+        width: max-content;
+        transform: translateX(10px);
+        padding: 50px 0 30px 0;
+    }
+    .feedback-grid-box4-inner-img {
+        width: 100%;
+    }
+    .feedback-grid-box5 p {
+        font-size: 9px;
+        line-height: 1.9;
+    }
+    .feedback-grid-box7 {
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+    /* ________ contact  ____________________________ */
+    .contact-row-box-1-contact-socials {
+        margin-left: 50px;
+    }
+    .contact-row-box-2 {
+        padding: 18px 30px 40px 15px;
+    }
+    /* ________ main footer  ____________________________ */
+}
+
+
+/*________ Breakpoint For 768 px __________________________________ */
+
+@media screen and (max-width:768px) {
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    .portrait-navigations ul {
+        padding-right: 30px;
+    }
+    .portrait-navigations ul li {
+        margin: 23px 0 0 28px;
+    }
+    .portrait-navigations ul li a {
+        font-size: 9px;
+    }
+    /* ________ hero  ____________________________ */
+    .hero-content p br {
+        display: block;
+    }
+    /* ________ chroma  ____________________________ */
+    .chroma-navigation ul li a {
+        margin-left: 7px;
+    }
+    .chroma-icons {
+        font-size: 12px;
+    }
+    .chroma-navigation ul li p {
+        font-size: 10px;
+    }
+    .chroma-text-box1 {
+        padding: 50px 15px 0 0;
+    }
+    .chroma-text-box2 {
+        padding: 0 0 20px 15px;
+    }
+    .chroma-para {
+        max-width: 200px;
+        line-height: 1.3;
+        font-size: 10px;
+    }
+    .chroma-row-2 {
+        padding: 100px 0 70px 0;
+        color: white;
+    }
+    .chroma-row-2 p {
+        line-height: 1.6;
+        font-size: 10px !important;
+    }
+    /* ________ helvetica  ____________________________ */
+    .helvetica-col-1 {
+        transform: translateX(15px);
+        padding-top: 20px;
+    }
+    .helvetiva-heading h1 {
+        font-size: 60px;
+        font-weight: 500;
+    }
+    .helvetica-col-1-content img {
+        width: 250px;
+        padding-top: 120px;
+    }
+    .helvetiva-text h4 {
+        font-size: 30px;
+        font-weight: 1500;
+        text-align: right;
+        padding: 0 20px 20px 0;
+    }
+    .helvetiva-text p {
+        max-width: 200px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    /*  col 2  */
+    .helvetica-col-2 {
+        padding-top: 30px;
+    }
+    .helvetica-col-2 h4 {
+        font-size: 30px;
+        text-align: left;
+        padding: 12px 0 0 7px;
+        transform: translateX(0);
+    }
+    /* ________ about  ____________________________ */
+    /* ________ team  ____________________________ */
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    /* ________ service second  ____________________________ */
+    /* ________ portfolio  ____________________________ */
+    .portfolio-book-absloute-img {
+        width: 70px !important;
+        height: 100px;
+    }
+    /* ________ feedback  ____________________________ */
+    /* ________ contact  ____________________________ */
+    /* ________ main footer  ____________________________ */
+}
+
+
+/*________ Breakpoint For 715 px __________________________________ */
+
+@media screen and (max-width:715px) {
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    /* ________ hero  ____________________________ */
+    .jarallax {
+        height: 60vh;
+    }
+    /* ________ chroma  ____________________________ */
+    /* ________ helvetica  ____________________________ */
+    .helvetica .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .helvetiva-heading h1 {
+        text-align: center;
+    }
+    .helvetica-col-1-content {
+        flex-direction: column-reverse;
+    }
+    .helvetiva-text h4 {
+        padding-top: 90px;
+        text-align: right;
+    }
+    .helvetiva-text p {
+        max-width: 100%;
+        text-align: right;
+    }
+    .helvetica-col-1-content img {
+        width: 320px;
+        padding-top: 40px;
+    }
+    .helvetica-col-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        max-width: 100%;
+    }
+    .helvetica-col-2 h4 {
+        padding: 10px 0 20px 0;
+    }
+    .helvetica-col-2-para-1 {
+        padding: 0;
+    }
+    .helvetica-col-2-para-2 {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    /* ________ about  ____________________________ */
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-grid-box1,
+    .about-grid-box2,
+    .about-grid-box3 {
+        height: auto;
+    }
+    .about-grid-box4,
+    .about-grid-box5,
+    .about-grid-box6 {
+        height: auto;
+    }
+    /* box 1  */
+    .about-grid-box1 {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .about-grid-box1 h1 {
+        font-size: 70px !important;
+        width: max-content;
+        transform: translateX(10px);
+    }
+    /* box 3 4 */
+    .about-grid-box3,
+    .about-grid-box4 {
+        height: 250px;
+    }
+    .about-grid-box3 p,
+    .about-grid-box4 p {
+        font-size: 18px;
+    }
+    /* box 5  */
+    .about-grid-box5 p {
+        font-size: 12px;
+        padding: 100px 40px;
+        line-height: 1.5;
+        color: black;
+        text-align: center;
+    }
+    /* ________ team  ____________________________ */
+    .team-heading-sect-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .team-heading-sect-box1,
+    .team-heading-sect-box2,
+    .team-heading-sect-box3 {
+        height: auto;
+    }
+    .team-heading-sect-box4,
+    .team-heading-sect-box5,
+    .team-heading-sect-box6 {
+        height: auto;
+    }
+    /* box 2  */
+    .team-heading-sect-box2 {
+        height: 360px;
+        min-width: auto;
+    }
+    .team-heading-sect-box2 h1 {
+        text-align: left;
+        transform: translateX(-5px);
+        font-size: 70px !important;
+        letter-spacing: 5px;
+        height: max-content;
+    }
+    /* box 3 4 */
+    .team-heading-sect-box4 {
+        /* background-image: url(../images/team-manager.png); */
+        height: 500px;
+    }
+    /* box 5  */
+    .team-heading-sect-box5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 10px;
+        height: 400px;
+    }
+    .team-heading-sect-box5 h3 {
+        font-size: 21px;
+        font-weight: 600;
+        padding-bottom: 0;
+    }
+    .team-heading-sect-box5 p {
+        font-size: 15px;
+        color: black;
+        padding-bottom: 0;
+        font-weight: 500;
+    }
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    /* ________ service second  ____________________________ */
+    /* ________ portfolio  ____________________________ */
+    /* ________ feedback  ____________________________ */
+    .feedback-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .feedback-grid-box {
+        height: auto;
+    }
+    .feedback-grid-box1,
+    .feedback-grid-box2,
+    .feedback-grid-box3 {
+        height: auto;
+    }
+    /* box 1  */
+    .feedback-grid-box1 {
+        height: 220px;
+        border-bottom: 1px dashed var(--feedback-border);
+    }
+    .feedback-grid-box1 h1 {
+        height: 140px;
+        font-size: 50px;
+    }
+    /* box 2 */
+    .feedback-grid-box2 {
+        display: none;
+    }
+    /* box 3  */
+    .feedback-grid-box3 {
+        border-right: 1px dashed var(--feedback-border);
+    }
+    /* box 4  */
+    .feedback-grid-box4 {
+        padding: 0;
+        height: 400px;
+    }
+    /* box 5  */
+    .feedback-grid-box5 {
+        height: 400px;
+        border-left: none;
+    }
+    .feedback-grid-box5 p {
+        font-size: 10px;
+        line-height: 1.9;
+    }
+    /* box 6  */
+    .feedback-grid-box6 {
+        padding: 50px 30px 0 0;
+    }
+    .feedback-grid-box6-inner-img {
+        max-width: 100%;
+        height: 100%;
+    }
+    /* box 7  */
+    .feedback-grid-box7 {
+        height: 400px;
+        padding-bottom: 50px;
+    }
+    /* box 8  */
+    .feedback-grid-box8 {
+        height: 300px;
+    }
+    /* ________ contact  ____________________________ */
+    .contact-heading {
+        text-align: left;
+    }
+    .contact-heading h1 {
+        font-size: 50px;
+        padding: 140px 0 0 15px;
+    }
+    .contact-heading h1::first-letter {
+        font-size: 70px;
+    }
+    .contact-row {
+        flex-direction: column-reverse;
+        padding-top: 70px;
+        width: 100%;
+    }
+    /* box 2  */
+    .contact-row-box-2 {
+        border-left: 1px dashed rgb(0, 0, 0);
+        padding: 0 0 0 15px;
+        width: 100%;
+    }
+    .contact-row-box-2-content form input {
+        width: 360px;
+    }
+    .contact-row-box-2-content p {
+        padding-bottom: 10px;
+    }
+    /* box 1  */
+    .contact-row-box-1 {
+        width: 100%;
+    }
+    .contact-row-box-1-contact-details {
+        padding: 50px 70px 40px 15px;
+    }
+    .contact-row-box-1-contact-socials {
+        padding: 50px 0 40px 15px;
+        margin: 0;
+    }
+    /* ________ main footer  ____________________________ */
+    .contact-mainFooter {
+        padding: 90px 0 30px 0;
+    }
+    .contact-mainFooter h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .contact-mainFooter p {
+        font-size: 10px;
+        font-weight: 500;
+    }
+}
+
+
+/*________ Breakpoint For 650 px __________________________________ */
+
+@media screen and (max-width:650px) {
+    /* ________ navigation btn ____________________________ */
+    .nav-toggler {
+        display: flex !important;
+    }
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    .portrait-navigations {
+        display: none;
+    }
+    /* ________ hero ___________________________________ */
+    .hero-content {
+        text-align: center;
+        padding: 100px 0 0 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.94), rgba(238, 238, 238, 0.807));
+        height: 100%;
+    }
+    .hero-content h3 {
+        color: rgb(255, 255, 255);
+        mix-blend-mode: normal;
+    }
+    .hero-content h3::first-letter {
+        font-size: 60px;
+        color: rgb(255, 218, 148);
+    }
+    .hero-content p {
+        color: rgb(255, 211, 141);
+        font-weight: 500;
+        mix-blend-mode: normal;
+        text-shadow: 1px 1px 1px black;
+    }
+    .hero-content-btn {
+        margin: auto;
+        width: max-content;
+    }
+    .hero-content-btn a {
+        background-color: white;
+        color: black;
+    }
+    .hero-content-btn a:hover {
+        background-color: transparent;
+        color: white;
+    }
+    /* ________ chroma  ____________________________ */
+    .chroma-navigation {
+        position: relative;
+        top: -50px;
+    }
+    .chroma-navigation ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+    /* text sect  */
+    .chroma-text-box1 {
+        padding: 20px 10px 0 0;
+    }
+    .chroma-text-box2 {
+        padding: 0 0 0 10px;
+        margin-bottom: -25px !important;
+    }
+    /* ________ helvetica  ____________________________ */
+    /* ________ about  ____________________________ */
+    /* ________ team  ____________________________ */
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    .service-heading-wrap {
+        background-image: none;
+    }
+    .service-heading-content {
+        padding: 0;
+    }
+    .service-heading-content-inner {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .service-heading-content h1 {
+        font-size: 45px;
+        transform: translateX(-10px);
+    }
+    /* content  */
+    .service-content-box-innerborder-box {
+        border: none;
+    }
+    .service-content-box-innerborder-box {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .service-content-box-innerborder-box-h3 h3 {
+        font-size: 18px;
+        padding: 21px 0;
+    }
+    .service-content-box-innerborder-box-detailText-section {
+        max-width: 100%;
+        padding: 0;
+        margin-left: 10px;
+    }
+    /* box 4 */
+    .service-content-box4 h3 {
+        padding: 50px 0 0 0;
+    }
+    .service-content-box-innerborder-box4 .service-content-box-innerborder-box-h3 {
+        width: 100%;
+        text-align: center;
+    }
+    /* ________ service second  ____________________________ */
+    .service-second-content-img img {
+        height: auto;
+        width: 170px;
+    }
+    .service-second-content-text {
+        padding: 0;
+    }
+    .service-second-content-box {
+        border-top: 1px dashed var(--border);
+        border-left: none;
+        padding: 10px 0;
+    }
+    .service-second-content-box-number-list p {
+        padding-left: 0;
+    }
+    .service-second-content-box-number-list-text {
+        position: relative;
+    }
+    .service-second-content-box-number-list-text h4 {
+        padding: 30px 0;
+    }
+    .service-second-content-box-number-list-text p {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        opacity: 0;
+    }
+    /* hover */
+    .service-second-content-box-number-list-text:hover h4 {
+        opacity: 0 !important;
+    }
+    .service-second-content-box-number-list-text:hover p {
+        opacity: 100 !important;
+    }
+    .service-second-content-box-number-list-text h4,
+    .service-second-content-box-number-list-text p {
+        transition: 0.4s !important;
+    }
+    /* ________ portfolio  ____________________________ */
+    .portfolio-book-absloute-img1 {
+        top: 120px;
+    }
+    .portfolio-book-absloute-img2 {
+        top: 120px;
+    }
+    .portfolio-book-absloute-img3 {
+        bottom: 150px;
+    }
+    /* ________ feedback  ____________________________ */
+    /* ________ contact  ____________________________ */
+    .contact-row-box-1 {
+        flex-direction: column;
+    }
+    .contact-row-box-2-content form input {
+        width: 260px;
+    }
+    .contact-row-box-1-contact-socials {
+        padding: 0 0 0 18px;
+    }
+    .contact-row-box-1-contact-socials a {
+        margin: 6px 0;
+    }
+    /* ________ main footer  ____________________________ */
+}
+
+
+/*________ Breakpoint For 515 px __________________________________ */
+
+@media screen and (max-width:515px) {
+    /* ________ navigation btn ____________________________ */
+    .nav-toggler {
+        right: 15px !important;
+    }
+    /* ________ preloader  ____________________________ */
+    /* ________ top btn  ____________________________ */
+    .back-to-top {
+        right: 15px !important;
+        bottom: 30px !important;
+    }
+    .back-to-top a {
+        padding: 10px 11px;
+        border-radius: 1px;
+    }
+    .back-to-top a {
+        padding: 11px 13px !important;
+        border-radius: 1px !important;
+    }
+    /* ________ header  ____________________________ */
+    /* ________ hero  ____________________________ */
+    .hero-content {
+        padding: 140px 25px 25px;
+        color: white;
+    }
+    /* ________ chroma  ____________________________ */
+    .chroma-navigation {
+        top: -70px;
+    }
+    .chroma-navigation ul {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .chroma-navigation ul li {
+        width: 120px;
+    }
+    /* text sect  */
+    .choroma-text-section {
+        display: none;
+    }
+    /* ________ helvetica  ____________________________ */
+    /* ________ about  ____________________________ */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-grid-box1 {
+        justify-content: end;
+    }
+    .about-grid-box1 h1 {
+        font-size: 30px;
+        border-right: 1px dashed black;
+    }
+    .about-grid-box3 p,
+    .about-grid-box4 p {
+        font-size: 18px;
+    }
+    .about-grid-box5 {
+        text-align: left;
+        height: 350px;
+    }
+    .about-grid-box5 p {
+        font-size: 10px;
+        padding: 50px;
+        line-height: 1.8;
+        color: black;
+        text-align: left;
+    }
+    .about-grid-box6 {
+        height: 250px;
+    }
+    .about-grid-box6 h1 {
+        height: 120px;
+    }
+    /* ________ team  ____________________________ */
+    .team-heading-sect-grid {
+        grid-template-columns: 1fr;
+    }
+    .team-heading-sect-box {
+        height: 300px;
+    }
+    .team-heading-sect-box3 {
+        height: 170px;
+    }
+    .team-heading-sect-box4 {
+        height: 500px;
+    }
+    /* ________ team swiper  ____________________________ */
+    /* ________ service  ____________________________ */
+    /* ________ service second  ____________________________ */
+    .service-second-content-img {
+        padding-top: 0;
+    }
+    .service-second-content-img img {
+        width: 150px;
+    }
+    .service-second-content-box {
+        padding: 0;
+    }
+    .service-second-content-box-number-list p {
+        font-size: 40px;
+        transform: translateX(10px);
+        padding-left: 10px;
+    }
+    .service-second-content-box-number-list-text {
+        padding-left: 30px;
+    }
+    .service-second-content-box-number-list-text h4 {
+        font-size: 15px;
+    }
+    .service-second-content-box-number-list-text p {
+        left: 30px;
+        font-size: 9px;
+        width: 130px;
+    }
+    /* ________ portfolio  ____________________________ */
+    .portfolio-img2-content-wrap a br {
+        display: block;
+    }
+    /* ________ feedback  ____________________________ */
+    .feedback-grid {
+        grid-template-columns: 1fr;
+    }
+    .feedback-grid-box {
+        height: 300px;
+    }
+    .feedback-grid-box9::before,
+    .feedback-grid-box9::after {
+        display: none;
+    }
+    /* ________ contact  ____________________________ */
+    /* ________ main footer  ____________________________ */
+}
+
+
+/*________ Breakpoint For 415 px __________________________________ */
+
+@media screen and (max-width:415px) {
+    /* ________ preloader  ____________________________ */
+    .preloader-outter {
+        width: 60px !important;
+        margin-top: -18px;
+    }
+    /* ________ top btn  ____________________________ */
+    /* ________ header  ____________________________ */
+    .logo {
+        margin: 15px 0;
+    }
+    /* ________ hero  ____________________________ */
+    /* ________ chroma  ____________________________ */
+    .chroma-navigation ul li {
+        width: 80px;
+    }
+    .chroma-navigation ul li a:hover .chroma-icons {
+        transform: translateY(-25px);
+    }
+    /* row 2  */
+    .chroma-row-2 {
+        padding: 70px 0 40px 0;
+    }
+    /* ________ helvetica  ____________________________ */
+    .helvetica {
+        padding: 60px 0;
+    }
+    .helvetica-col-1-content img {
+        width: 250px;
+    }
+    /* ________ about  ____________________________ */
+    /* ________ team  ____________________________ */
+    /* ________ team swiper  ____________________________ */
+    .team-swiper-section {
+        padding: 70px 0;
+    }
+    .swiper {
+        padding-bottom: 30px !important;
+    }
+    /* ________ service  ____________________________ */
+    .services {
+        padding-top: 60px;
+    }
+    .service-content-box4 h3 {
+        padding: 10px 0 0 0;
+    }
+    /* ________ service second  ____________________________ */
+    .service-second-content-img img {
+        display: none;
+    }
+    .service-second-content-box-number-list p {
+        font-size: 40px;
+    }
+    .service-second-content-box-number-list-text {
+        padding: 40px 0;
+    }
+    .service-second-content-box-number-list-text h4 {
+        padding: 0 0 0 21px;
+        font-size: 12px;
+    }
+    .service-second-content-box-number-list-text p {
+        left: 21px;
+        width: 100px;
+        pointer-events: none;
+    }
+    /* ________ portfolio  ____________________________ */
+    .portfolio-img-1 {
+        padding: 0 0 70px 0;
+    }
+    .portfolio-book-absloute-img {
+        width: 45px !important;
+        height: 70px;
+    }
+    .portfolio-book-absloute-img1 {
+        top: 20px;
+    }
+    .portfolio-book-absloute-img2 {
+        top: 120px;
+        left: 50px;
+    }
+    .portfolio-book-absloute-img3 {
+        bottom: 130px;
+    }
+    /* ________ feedback  ____________________________ */
+    .feedback {
+        padding: 60px 0;
+    }
+    /* ________ contact  ____________________________ */
+    /* ________ main footer  ____________________________ */
+}

@@ -1,0 +1,97 @@
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(121, 113, 99);
+}
+
+:root {
+    --wheat: #ebeaeb;
+    --border: #ffffff65;
+    --dark-black: #0C0C0C;
+    --feedback-border: rgba(255, 255, 255, 0.398);
+    --service-border: rgba(255, 255, 255, 0.277);
+}
+
+@font-face {
+    /* FW  300, 400, 500, 700 for default  */
+    font-family: 'Ubuntu', sans-serif;
+    /* FW 100 to 900 for bolder and headings content */
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url();
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: .9px;
+}
+
+a::selection,
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    color: rgb(25, 179, 179);
+    background-color: rgba(42, 42, 42, 0);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-size: 140px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    width: max-content;
+}
+
+img {
+    user-select: none;
+}
+
+.para {
+    font-size: 12px;
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn a {
+    display: flex;
+    border-radius: 3px;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+}

@@ -1,0 +1,17 @@
+.swiper {
+    max-width: 1170px;
+    margin: 0 auto;
+    height: max-content;
+    padding-bottom: 70px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(245, 245, 245);
+    padding: 5px;
+    transition: ease 0.7s !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(233, 233, 233);
+}
