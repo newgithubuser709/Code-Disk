@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="image-comparison-text">
+        <p>image comparison</p>
+    </div>
+
+    <div class="image-comparison-container">
+        <div class="image-comparison image-comparison_i1" id="compare_box_jar">
+            <div class="image-comparison-inner" id="compare_box">
+                <div class="image-comparison1">
+                    <img src="img1.jpg" alt="joker-1" class="joker-image joker-image1">
+                </div>
+                <div class="img-compare-slider-custom-outter">
+                    <div class="img-compare-slider-custom-inner" id="slider_custom_inner">
+                        <i class="fa-solid fa-chevron-left slider-icon slider-icon-left"></i>
+                        <i class="fa-solid fa-angle-right slider-icon slider-icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-comparison image-comparison2 image-comparison_i2">
+            <img src="img2.jpg" alt="joker-2" class="joker-image joker-image2">
+        </div>
+
+        <input type="range" min="0" max="100" value="50" step="0.00001" class="img-compare-slider" id="compare_slider">
+    </div>
+
+    <!-- font awesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- my script  -->
+    <script src="script.js"></script>
+</body>
+
+</html>

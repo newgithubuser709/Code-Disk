@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video controls</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="video-container">
+
+        <video class="video" id="video" type="video/mp4">
+            <source src="videos/course-video.mp4">
+        </video>
+
+        <div class="video-controls-wrap" id="main_container_controls">
+            <div class="video-controls">
+                <div class="TimeLine_container">
+                    <div class="TimeLine_bg" id="TimeLine_bg">
+                        <div class="TimeLine" id="TimeLine"></div>
+                    </div>
+                    <input type="range" min="0" max="100" value="0" step="0.001" class="TimeLine_input" id="TimeLine_input">
+                </div>
+                <div class="video-buttons-container">
+                    <div class="PlayPause" id="PlayPause">
+                        <i class="fa-regular fa-circle-play PlayPause-i" id="play_i"></i>
+                        <i class="fa-regular fa-circle-pause PlayPause-i" id="pause_i"></i>
+                    </div>
+                    <div class="volume-container" id="volume_container">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <!-- <i class="fa-solid fa-volume-low"></i> -->
+                        <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+                        <input type="range" class="video_volume" id="video_volume" step="0.0001" min="0" max="1" value="1">
+                    </div>
+                    <div class="skipBtn_container">
+                        <button id="back_skip">↶</button>
+                        <button id="forward_skip">↷</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- _______________________________________________________________  -->
+
+    <!-- font awesome  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- my script  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
